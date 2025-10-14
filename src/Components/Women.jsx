@@ -3,7 +3,7 @@ import "../Styles/Women.css";
 
 
 import sale from "/src/assets/sale.jpg";
-import '/src/assets/sarees/s1.jpg';
+import s1 from '/src/assets/sarees/s1.jpg';
 
 
     //  sarees
@@ -11,7 +11,7 @@ import '/src/assets/sarees/s1.jpg';
 const sarees = [
   {
     id: 1,
-    image:'/src/assets/sarees/s1.jpg',
+    image:{s1},
     brand: "Style",
     title: "Women black Georgette Saree with Blouse Piece",
     price: "₹1,395",
