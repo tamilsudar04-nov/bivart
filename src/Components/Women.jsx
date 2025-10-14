@@ -2,8 +2,8 @@ import React from "react";
 import "../Styles/Women.css";
 
 
-import sale from "/src/assets/sale.jpg"
-
+import sale from "/src/assets/sale.jpg";
+import '/src/assets/sarees/s1.jpg';
 
 
     //  sarees
