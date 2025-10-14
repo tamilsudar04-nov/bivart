@@ -13,7 +13,7 @@ import Contact from './Components/Contact'
 
 import Login from './Components/Login'
 import Navbar from './Components/Navbar'
-import SareesSection from './Components/SareesSection'
+
 
 
 
@@ -22,8 +22,8 @@ import SareesSection from './Components/SareesSection'
 function App() {
   return (
     <>
-    <SareesSection/>
-{/* <Navbar/>
+    {/* <SareesSection/> */}
+ <Navbar/>
    <Routes>
 <Route path='/' element={<Home/>}/>
 <Route path='Women' element={<Women/>}/>
@@ -33,7 +33,7 @@ function App() {
 <Route path='AddCart' element={<AddCart/>}/>
 <Route path='Contact' element={<Contact/>}/>
 <Route path='Login' element={<Login/>}/> 
-  </Routes> */}
+  </Routes> 
     
     </>
   )
