@@ -1,0 +1,73 @@
+
+@import url('https://fonts.cdnfonts.com/css/mommy-lemon');
+@import url('https://fonts.cdnfonts.com/css/stone-sans');
+                
+                
+     body { 
+  margin: 0;
+   padding: 0;
+ height: 100%;
+  }
+  .nav{
+   
+   margin-left: 8vh;
+    margin-top: 4vh;
+  }
+.nav1{
+  font-weight: bold;
+ font-family: 'Mommy Lemon', sans-serif;
+  font-size: 5vh;                                    
+      color:rgb(35, 2, 67);
+  text-decoration: none;
+  margin-top: -2vh;
+}
+.nav2{
+  font-weight: bold;
+ font-family: 'Stone Sans Semi Bold', sans-serif;
+   color: black;
+  margin-left: 13vh;
+  text-decoration: none;
+  
+}
+.nav3{
+  font-weight: bold;
+ font-family: 'Stone Sans Semi Bold', sans-serif;
+   color: black;
+  margin-left: 8vh;
+  text-decoration: none;
+}
+.nav4{
+  font-weight: bold;
+   font-family: 'Stone Sans Semi Bold', sans-serif;
+   color: black;
+  margin-left: 8vh;
+  text-decoration: none;
+}
+.nav5{
+  font-weight: bold;
+ font-family: 'Stone Sans Semi Bold', sans-serif;
+   color: black;
+ margin-left: 60vh;
+  text-decoration: none;
+}
+.nav6{
+  font-weight: bold;
+  font-family: 'Stone Sans Semi Bold', sans-serif;
+   color: black;
+ margin-left: 5vh;
+  text-decoration: none;
+}
+.nav7{
+  font-weight: bold;
+ font-family: 'Stone Sans Semi Bold', sans-serif;
+   color: black;
+  margin-left: 5vh;
+  text-decoration: none;
+}
+.nav8{
+  font-weight: bold;
+ font-family: 'Stone Sans Semi Bold', sans-serif;
+   color: black;
+ margin-left: 8vh;
+  text-decoration: none;
+}

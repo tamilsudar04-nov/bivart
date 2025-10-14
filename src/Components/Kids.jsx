@@ -1,5 +1,5 @@
 import React from 'react'
-
+import '../Styles/Kids.css'
 export default function Kids() {
   return (
     <div>

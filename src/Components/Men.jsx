@@ -1,9 +1,10 @@
 import React from 'react'
-
+import '../Styles/Men.css'
+import frock from '/src/assets/frock.jpg'
 export default function Men() {
   return (
     <div>
-  <img className='pic' src="src/assets/black-friday-5770278_1280.png" alt="" />
+<img src={frock} alt="" />
     </div>
   )
 }

@@ -1,9 +1,15 @@
 import React from 'react'
-import './Home.css'
+import '../Styles/Home.css'
+
+
+import sale from '/src/assets/sale.jpg' 
+
+
 export default function Home() {
   return (
     <div >
-      <img className='pic' src="src/assets/black-friday-5770278_1280.png" alt="" />
+      <img className='pic' src={sale}  />
+      
       </div>
   )
 }
