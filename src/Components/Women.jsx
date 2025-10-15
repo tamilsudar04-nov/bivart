@@ -3,15 +3,70 @@ import "../Styles/Women.css";
 
 
 import sale from "/src/assets/sale.jpg";
-import s1 from '/src/assets/sarees/s1.jpg';
+   
+ //  sarees
+import s1 from '../assets/sarees/s1.jpg';
+import s2 from '/src/assets/sarees/s2.jpg';
+import s3 from '/src/assets/sarees/s3.jpg';
+import s4 from '/src/assets/sarees/s4.jpg';
+import s5 from '/src/assets/sarees/s5.jpg';
+import s6 from '/src/assets/sarees/s6.jpg';
+import s7 from '/src/assets/sarees/s7.jpg';
+import s8 from '/src/assets/sarees/s8.jpg';
+import s9 from '/src/assets/sarees/s9.jpg';
+import s10 from '/src/assets/sarees/s10.jpg';
+import s11 from '/src/assets/sarees/s11.jpg';
+import s12 from '/src/assets/sarees/s12.jpg';
 
+            // kurtis
+import k1 from '/src/assets/kurtis/k1.jpg';
+import k2 from '/src/assets/kurtis/k2.jpg';
+import k7 from '/src/assets/kurtis/k7.jpg';
+import k4 from '/src/assets/kurtis/k4.jpg';
+import k5 from '/src/assets/kurtis/k5.jpg';
+import k13 from '/src/assets/kurtis/s13.jpg';
+import k3 from '/src/assets/kurtis/k3.jpg';
+import k8 from '/src/assets/kurtis/k8.jpg';
+import k9 from '/src/assets/kurtis/k9.jpg';
+import k12 from'/src/assets/kurtis/k12.jpg';
+import k11 from'/src/assets/kurtis/k11.jpg';
+import k6 from '/src/assets/kurtis/k6.jpg';
+          
+              // bottom
+
+import b1 from '/src/assets/bottom/b1.jpg';
+import b2 from '/src/assets/bottom/b2.jpg';             
+import b3 from '/src/assets/bottom/b3.jpg';
+import b4 from '/src/assets/bottom/b4.jpg';
+import b5 from '/src/assets/bottom/b5.jpg';
+import b6 from '/src/assets/bottom/b6.jpg';
+import b7 from '/src/assets/bottom/b7.jpg';
+import b8 from '/src/assets/bottom/b8.jpg';
+import b9 from '/src/assets/bottom/b9.jpg';
+import b10 from '/src/assets/bottom/b10.jpg';
+import b11 from '/src/assets/bottom/b11.jpg';
+ import b12 from '/src/assets/bottom/b12.jpg';
+
+              // dres
+import d1 from '/src/assets/dress/d1.jpg';
+import d2 from '/src/assets/dress/d2.jpg';
+import d3 from '/src/assets/dress/d3.jpg';
+import d4 from '/src/assets/dress/d4.jpg';
+import d5 from '/src/assets/dress/d5.jpg';
+import d13 from '/src/assets/dress/d13.jpg';
+import d7 from '/src/assets/dress/d7.jpg';
+import d8 from '/src/assets/dress/d8.jpg';
+import d9 from '/src/assets/dress/d9.jpg';
+import d10 from '/src/assets/dress/d10.jpg';
+import d11 from '/src/assets/dress/d11.jpg';
+import d12 from '/src/assets/dress/d12.jpg';
 
     //  sarees
 
 const sarees = [
   {
     id: 1,
-    image:{s1},
+    image:s1,
     brand: "Style",
     title: "Women black Georgette Saree with Blouse Piece",
     price: "₹1,395",
@@ -21,7 +76,7 @@ const sarees = [
   },
   {
     id: 2,
-    image:'/src/assets/sarees/s2.jpg',
+    image:s2,
     brand: "Tradition",
     title: "women traditional maroon cotton saree with gold works",
     price: "₹2,034",
@@ -31,7 +86,7 @@ const sarees = [
   },
   {
     id: 3,
-    image:'/src/assets/sarees/s3.jpg' ,
+    image:s3 ,
     brand: "Label",
     title: "Women  grant silk Saree with aari Blouse Piece",
     price: "₹1,239",
@@ -41,7 +96,7 @@ const sarees = [
   },
   {
     id: 4,
-    image:'/src/assets/sarees/s4.jpg' ,
+    image:s4 ,
     brand: "Fashion",
     title: "women white pure cotton saree with blouse piece",
     price: "₹1500",
@@ -51,7 +106,7 @@ const sarees = [
   },
   {
     id: 5,
-    image:'/src/assets/sarees/s5.jpg' ,
+    image:s5 ,
     brand: "Fashion",
     title: "women beautiful silk saree with blouse piece",
     price: "₹1000",
@@ -61,7 +116,7 @@ const sarees = [
   },
   {
     id: 6,
-    image:'/src/assets/sarees/s6.jpg' ,
+    image:s6 ,
     brand: "Label",
     title: "women cotton blend saree with blouse piece",
     price: "₹2,262",
@@ -71,7 +126,7 @@ const sarees = [
   },
   {
     id: 7,
-    image:'/src/assets/sarees/s7.jpg' ,
+    image:s7 ,
     brand: "Tradition",
     title: "women purple pure cotton saree with blouse piece",
     price: "₹2,262",
@@ -81,7 +136,7 @@ const sarees = [
   },
    {
     id: 8,
-    image:'/src/assets/sarees/s8.jpg' ,
+    image:s8,
     brand: "Label",
     title: "women multi colour pure cotton saree with blouse piece",
     price: "₹1,000",
@@ -91,7 +146,7 @@ const sarees = [
   },
    {
     id: 9,
-    image:'/src/assets/sarees/s9.jpg' ,
+    image:s9 ,
     brand: "Tradition",
     title: "women beautiful silk saree with blouse piece",
     price: "₹2,262",
@@ -101,7 +156,7 @@ const sarees = [
   },
    {
     id: 10,
-    image:'/src/assets/sarees/s10.jpg' ,
+    image:s10 ,
     brand: "Label",
     title: "women kerala saree made with pure cotton",
     price: "₹999",
@@ -111,7 +166,7 @@ const sarees = [
   },
    {
     id: 11,
-    image:'/src/assets/sarees/s11.jpg' ,
+    image:s11,
     brand: "Fashion",
     title: "women beautiful silk saree with blouse piece",
     price: "₹2,262",
@@ -121,7 +176,7 @@ const sarees = [
   },
    {
     id: 12,
-    image:'/src/assets/sarees/s12.jpg' ,
+    image:s12,
     brand: "Fashion",
     title: "Women blue Georgette Saree with Blouse Piece",
     price: "₹1999",
@@ -137,7 +192,7 @@ const sarees = [
  const kurtis =[
   {
     id: 1,
-    image:'/src/assets/kurtis/k1.jpg',
+    image:k1,
     brand: "Style",
     title: "",
     price: "₹",
@@ -147,7 +202,7 @@ const sarees = [
   },
   {
     id: 2,
-    image:'/src/assets/kurtis/k2.jpg',
+    image:k2,
     brand: "Style",
     title: "",
     price: "₹",
@@ -157,7 +212,7 @@ const sarees = [
   },
   {
     id: 3,
-    image:'/src/assets/kurtis/k7.jpg',
+    image:k7,
     brand: "Style",
     title: "",
     price: "₹",
@@ -167,7 +222,7 @@ const sarees = [
   },
   {
     id: 4,
-    image:'/src/assets/kurtis/k4.jpg',
+    image:k4,
     brand: "Style",
     title: "",
     price: "₹",
@@ -177,7 +232,7 @@ const sarees = [
   },
   {
     id: 5,
-    image:'/src/assets/kurtis/k5.jpg',
+    image:k5,
     brand: "Style",
     title: "",
     price: "₹",
@@ -187,7 +242,7 @@ const sarees = [
   },
   {
     id: 6,
-    image:'/src/assets/kurtis/s13.jpg',
+    image:k13,
     brand: "Style",
     title: "",
     price: "₹",
@@ -197,7 +252,7 @@ const sarees = [
   },
   {
     id: 7,
-    image:'/src/assets/kurtis/k3.jpg',
+    image:k3,
     brand: "Style",
     title: "",
     price: "₹",
@@ -207,7 +262,7 @@ const sarees = [
   },
    {
     id: 8,
-    image:'/src/assets/kurtis/k8.jpg',
+    image:k8,
     brand: "Style",
     title: "",
     price: "₹",
@@ -217,7 +272,7 @@ const sarees = [
   },
    {
     id: 9,
-    image:'/src/assets/kurtis/k9.jpg',
+    image:k9,
     brand: "Style",
     title: "",
     price: "₹",
@@ -227,7 +282,7 @@ const sarees = [
   },
    {
     id: 10,
-    image:'/src/assets/kurtis/k12.jpg',
+    image:k12,
     brand: "Style",
     title: "",
     price: "₹",
@@ -237,7 +292,7 @@ const sarees = [
   },
    {
     id: 11,
-    image:'/src/assets/kurtis/k11.jpg',
+    image:k11,
     brand: "Style",
     title: "",
     price: "₹",
@@ -247,7 +302,7 @@ const sarees = [
   },
    {
     id: 12,
-    image:'/src/assets/kurtis/k6.jpg',
+    image:k6,
     brand: "Style",
     title: "",
     price: "₹",
@@ -262,7 +317,7 @@ const sarees = [
    const bottom =[
  {
     id: 1,
-    image:'/src/assets/bottom/b1.jpg',
+    image:b1,
     brand: "Fashion",
     title: "",
     price: "₹",
@@ -272,7 +327,7 @@ const sarees = [
   },
    {
     id: 2,
-    image:'/src/assets/bottom/b2.jpg',
+    image:b2,
     brand: "Fashion",
     title: "",
     price: "₹",
@@ -282,7 +337,7 @@ const sarees = [
   },
    {
     id: 3,
-    image:'/src/assets/bottom/b3.jpg',
+    image:b3,
     brand: "Fashion",
     title: "",
     price: "₹",
@@ -292,7 +347,7 @@ const sarees = [
   },
    {
     id: 4,
-    image:'/src/assets/bottom/b4.jpg',
+    image:b4,
     brand: "Fashion",
     title: "",
     price: "₹",
@@ -302,7 +357,7 @@ const sarees = [
   },
    {
     id: 5,
-    image:'/src/assets/bottom/b5.jpg',
+    image:b5,
     brand: "Fashion",
     title: "",
     price: "₹",
@@ -312,7 +367,7 @@ const sarees = [
   },
    {
     id: 6,
-    image:'/src/assets/bottom/b6.jpg',
+    image:b6,
     brand: "Fashion",
     title: "",
     price: "₹",
@@ -322,7 +377,7 @@ const sarees = [
   },
   {
     id: 7,
-    image:'/src/assets/bottom/b7.jpg',
+    image:b7,
     brand: "Fashion",
     title: "",
     price: "₹",
@@ -332,7 +387,7 @@ const sarees = [
   },
   {
     id: 8,
-    image:'/src/assets/bottom/b8.jpg',
+    image:b8,
     brand: "Fashion",
     title: "",
     price: "₹",
@@ -342,7 +397,7 @@ const sarees = [
   },
   {
     id: 9,
-    image:'/src/assets/bottom/b9.jpg',
+    image:b9,
     brand: "Fashion",
     title: "",
     price: "₹",
@@ -352,7 +407,7 @@ const sarees = [
   },
   {
     id: 10,
-    image:'/src/assets/bottom/b10.jpg',
+    image:b10,
     brand: "Fashion",
     title: "",
     price: "₹",
@@ -362,7 +417,7 @@ const sarees = [
   },
 {
     id: 11,
-    image:'/src/assets/bottom/b11.jpg',
+    image:b11,
     brand: "Fashion",
     title: "",
     price: "₹",
@@ -372,7 +427,7 @@ const sarees = [
   },
   {
     id: 12,
-    image:'/src/assets/bottom/b12.jpg',
+    image: b12,
     brand: "Fashion",
     title: "",
     price: "₹",
@@ -389,7 +444,7 @@ const sarees = [
      const dress =[
       {
     id: 1,
-    image:'/src/assets/dress/d1.jpg',
+    image:d1,
     brand: "Fashion",
     title: "",
     price: "₹",
@@ -399,7 +454,7 @@ const sarees = [
   },
   {
     id: 2,
-    image:'/src/assets/dress/d2.jpg',
+    image:d2,
     brand: "Fashion",
     title: "",
     price: "₹",
@@ -409,7 +464,7 @@ const sarees = [
   },
   {
     id: 3,
-    image:'/src/assets/dress/d3.jpg',
+    image:d3,
     brand: "Fashion",
     title: "",
     price: "₹",
@@ -419,7 +474,7 @@ const sarees = [
   },
   {
     id: 4,
-    image:'/src/assets/dress/d4.jpg',
+    image:d4,
     brand: "Fashion",
     title: "",
     price: "₹",
@@ -429,7 +484,7 @@ const sarees = [
   },
   {
     id: 5,
-    image:'/src/assets/dress/d5.jpg',
+    image:d5,
     brand: "Fashion",
     title: "",
     price: "₹",
@@ -439,7 +494,7 @@ const sarees = [
   },
   {
     id: 6,
-    image:'/src/assets/dress/d6.jpg',
+    image:d13,
     brand: "Fashion",
     title: "",
     price: "₹",
@@ -449,7 +504,7 @@ const sarees = [
   },
   {
     id: 7,
-    image:'/src/assets/dress/d7.jpg',
+    image:d7,
     brand: "Fashion",
     title: "",
     price: "₹",
@@ -459,7 +514,7 @@ const sarees = [
   },
   {
     id: 8,
-    image:'/src/assets/dress/d8.jpg',
+    image:d8,
     brand: "Fashion",
     title: "",
     price: "₹",
@@ -469,7 +524,7 @@ const sarees = [
   },
   {
     id: 9,
-    image:'/src/assets/dress/d9.jpg',
+    image:d9,
     brand: "Fashion",
     title: "",
     price: "₹",
@@ -479,7 +534,7 @@ const sarees = [
   },
   {
     id: 10,
-    image:'/src/assets/dress/d10.jpg',
+    image:d10,
     brand: "Fashion",
     title: "",
     price: "₹",
@@ -489,7 +544,7 @@ const sarees = [
   },
   {
     id: 11,
-    image:'/src/assets/dress/d11.jpg',
+    image:d11,
     brand: "Fashion",
     title: "",
     price: "₹",
@@ -499,7 +554,7 @@ const sarees = [
   },
   {
     id: 12,
-    image:'/src/assets/dress/d12.jpg',
+    image:d12,
     brand: "Fashion",
     title: "",
     price: "₹",
