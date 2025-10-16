@@ -6,7 +6,7 @@ import sale from "/src/assets/sale.jpg";
    
  //  sarees
 import s1 from '../assets/sarees/s1.jpg';
-import s2 from '/src/assets/sarees/s2.jpg';
+import s2 from '../assets/sarees/s2.jpg';
 import s3 from '/src/assets/sarees/s3.jpg';
 import s4 from '/src/assets/sarees/s4.jpg';
 import s5 from '/src/assets/sarees/s5.jpg';
