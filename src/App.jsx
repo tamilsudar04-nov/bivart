@@ -22,19 +22,22 @@ import Navbar from './Components/Navbar'
 function App() {
   return (
     <>
-    {/* <SareesSection/> */}
- <Navbar/>
-   <Routes>
-<Route path='/' element={<Home/>}/>
-<Route path='Women' element={<Women/>}/>
-<Route path='Men' element={<Men/>}/>
-<Route path='Kids'element={<Kids/>}/>
-<Route path='Wishlist' element={<Wishlist/>}/>
-<Route path='AddCart' element={<AddCart/>}/>
-<Route path='Contact' element={<Contact/>}/>
-<Route path='Login' element={<Login/>}/> 
-  </Routes> 
     
+    {/* <SareesSection/> */}
+      <Navbar/>
+ 
+        <Routes>
+          
+          <Route path="/" element={<Home/>}/>
+          <Route path="/Women" element={<Women/>}/>
+          <Route path="/Men" element={<Men/>}/>
+          <Route path="/Kids" element={<Kids/>}/>
+          <Route path="/Contact" element={<Contact/>}/>
+          <Route path="/Addcart" element={<AddCart/>}/>
+          <Route path="/Wishlist" element={<Wishlist/>}/>
+          <Route path="/Login" element={<Login />} />
+        </Routes>
+
     </>
   )
 }

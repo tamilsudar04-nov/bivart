@@ -1,33 +1,37 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import '../Styles/Navbar.css'
-
-import Wishlist from '/src/assets/Wishlist.jpg'
-import addtocart from '/src/assets/addtocart.jpg'
-import user from '/src/assets/user.jpg'
-
-
-
-
-
+import React, { useEffect, useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import user from '../assets/Tops/user.jpg';
+import '../Styles/Navbar.css';
 
 export default function Navbar() {
+  const [loggedUser, setLoggedUser] = useState(null);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const savedUser = JSON.parse(localStorage.getItem("loggedUser"));
+    if (savedUser) setLoggedUser(savedUser);
+  }, []);
+
+  const handleLoginClick = () => {
+    navigate("/Login");
+  };
   return (
     <div>
-      <nav className='nav' >
-          <Link to="/" className='nav1'> Bivart Fashion</Link>
-          <Link to="Women"className='nav2'> Women</Link>
-          <Link to="Men" className='nav3'>Men</Link>
-          <Link to="Kids" className='nav4'>Kids</Link>
-           <Link to="Contact" className='nav8'>Contact</Link> 
-           <Link to="Wishlist" className='nav5'><img src={Wishlist} width='35vw' height='35vh'/> Wishlist</Link>
-          <Link to="AddCart"className='nav6'><img src={addtocart} width='35vw' height='35vh'/>AddCart</Link>
-          <Link to="Login" className='nav7'><img src={user} width='35vw' height='35vh'/>Login</Link>
-         
-       </nav>
-  
-
-
+      <nav className='nav'>
+        <ul>
+          <li className='nav1'> <Link to='/'>Bivart Fashion</Link></li>
+          <li className='nav2'><Link to='/Women'>Women</Link></li>
+          <li className='nav3'><Link to='/Men'>Men</Link></li>
+           <li className='nav4'><Link to='/Kids'>Kids</Link></li>
+            <li className='nav5'><Link to='/Contact'>Contact</Link></li>
+             <li className='nav6'><Link to='/Wishlist'>Wishlist</Link></li>
+              <li className='nav7'><Link to='/AddCart'>Add to Cart</Link></li>
+               <div className="nav8" onClick={handleLoginClick}>
+          <img src={user} width="35vw" height="35vh" alt="User" />
+          <span>{loggedUser ? loggedUser.username : "Login"}</span>
+        </div>
+        </ul>
+      </nav>
     </div>
   )
 }
