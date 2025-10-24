@@ -4,9 +4,23 @@ body{
   margin: 0;
    padding: 0;
  height: 100%;
-
+  
 }
-
+.bivart{
+  z-index: 2;
+  position: absolute;
+ font-family: 'Mommy Lemon', sans-serif; 
+  font-size: 20vh;
+ margin-top:-22%;  
+ margin-left: 18%;
+}
+.fashion{
+   position: absolute;
+ font-family: 'Mommy Lemon', sans-serif; 
+  font-size: 20vh;
+   margin-top:-22%;  
+   margin-left: 63%;
+}
 .sale{
   height: 60vh;
   width: 100%;

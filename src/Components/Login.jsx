@@ -1,15 +1,17 @@
 import React, { useState } from "react";
 import "../Styles/Login.css";
 import { useNavigate } from "react-router-dom";
+import sale from "/src/assets/sale.jpg";
 
 export default function Login() {
   const [formData, setFormData] = useState({
     username: "",
     phone: "",
+    gender: "",
+    city: "",
+    stylePreference: "",
     email: "",
     password: "",
-    gender: "",
-    stylePreference: "",
   });
 
   const navigate = useNavigate();
@@ -22,89 +24,113 @@ export default function Login() {
   const handleLogin = (e) => {
     e.preventDefault();
 
-    const { username, phone, email, password, gender, stylePreference } = formData;
+    const { username, phone, gender, city, stylePreference, email, password } = formData;
 
-    if (!username || !phone || !email || !password || !gender || !stylePreference) {
+    if (!username || !phone || !gender || !city || !stylePreference || !email || !password) {
       alert("Please fill in all fields!");
       return;
     }
 
-    const users = JSON.parse(localStorage.getItem("users")) || [];
-    const existingUser = users.find((u) => u.email === email);
+    let users = JSON.parse(localStorage.getItem("users")) || [];
+
+
+    let existingUser = users.find(
+      (u) => u.email === email || u.username === username
+    );
 
     if (existingUser) {
+     
       if (existingUser.password === password) {
         localStorage.setItem("loggedUser", JSON.stringify(existingUser));
-        alert("Login successful!");
-        navigate("/");
+        alert(`Welcome back, ${existingUser.username}!`);
       } else {
-        alert("Incorrect password!");
+      
+        existingUser.password = password;
+        localStorage.setItem("users", JSON.stringify(users));
+        localStorage.setItem("loggedUser", JSON.stringify(existingUser));
+        alert(`Welcome back, ${existingUser.username}! (Password updated)`);
       }
     } else {
-      const newUser = { username, phone, email, password, gender, stylePreference };
+    
+      const newUser = { username, phone, gender, city, stylePreference, email, password };
       users.push(newUser);
       localStorage.setItem("users", JSON.stringify(users));
       localStorage.setItem("loggedUser", JSON.stringify(newUser));
-      alert("New account created successfully!");
-      navigate("/");
+      alert(`Welcome, ${username}! Your account has been created.`);
     }
+
+    navigate("/");
+    window.location.reload();
   };
 
   return (
-    <div className="login-container">
+    <div>
+      <img className="sale" src={sale} alt="Fashion Sale Banner" />
+      <p className="bivart">Bivart</p>
+      <p className="fashion">Fashion</p>
+
       <form onSubmit={handleLogin} className="login-form">
-        <h2>Welcome to Bivart Fashion 👗</h2>
-        <p className="subtitle">Login or Create your Fashion Profile</p>
+        <h2>Welcome to Bivart Fashion</h2>
+        <p className="subtitle">Login or create your account</p>
 
         <input
           type="text"
           name="username"
-          placeholder="Full Name"
+          placeholder="Username"
           value={formData.username}
           onChange={handleChange}
-        />
+        /><br /><br />
+
         <input
           type="tel"
           name="phone"
           placeholder="Phone Number"
           value={formData.phone}
           onChange={handleChange}
-        />
-        <input
-          type="email"
-          name="email"
-          placeholder="Email Address"
-          value={formData.email}
-          onChange={handleChange}
-        />
-        <input
-          type="password"
-          name="password"
-          placeholder="Password"
-          value={formData.password}
-          onChange={handleChange}
-        />
+        /><br /><br />
 
         <select name="gender" value={formData.gender} onChange={handleChange}>
           <option value="">Select Gender</option>
           <option value="Female">Female</option>
           <option value="Male">Male</option>
           <option value="Other">Other</option>
-        </select>
+        </select><br /><br />
 
-        <select
+        <input
+          type="text"
+          name="city"
+          placeholder="City"
+          value={formData.city}
+          onChange={handleChange}
+        /><br /><br />
+
+        <input
+          type="text"
           name="stylePreference"
+          placeholder="Style Preference (e.g., Casual, Traditional)"
           value={formData.stylePreference}
           onChange={handleChange}
-        >
-          <option value="">Select Style Preference</option>
-          <option value="Traditional">Traditional</option>
-          <option value="Western">Western</option>
-          <option value="Casual">Casual</option>
-          <option value="Formal">Formal</option>
-        </select>
+        /><br /><br />
 
-        <button type="submit" className="login-btn">Login / Register</button>
+        <input
+          type="email"
+          name="email"
+          placeholder="Email Address"
+          value={formData.email}
+          onChange={handleChange}
+        /><br /><br />
+
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          value={formData.password}
+          onChange={handleChange}
+        /><br /><br />
+
+        <button type="submit" className="login-btn">
+          Continue
+        </button>
       </form>
     </div>
   );

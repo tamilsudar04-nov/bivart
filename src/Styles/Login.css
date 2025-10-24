@@ -1,18 +1,35 @@
+
+.bivart{
+  z-index: 2;
+  position: absolute;
+ font-family: 'Mommy Lemon', sans-serif; 
+  font-size: 20vh;
+ margin-top:-22%;  
+ margin-left: 18%;
+}
+.fashion{
+   position: absolute;
+ font-family: 'Mommy Lemon', sans-serif; 
+  font-size: 20vh;
+   margin-top:-22%;  
+   margin-left: 63%;
+}
 .login-container {
-  display: flex;
+ display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
-  background: linear-gradient(to right, #f9d423, #ff4e50);
+  height: 100%;
+  margin-top: 10vh;
+  
   font-family: "Poppins", sans-serif;
 }
 
 .login-form {
-  background: #fff;
+  background:;
   padding: 40px 50px;
   border-radius: 15px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-  width: 380px;
+  width: 100%;
   text-align: center;
 }
 
@@ -29,7 +46,7 @@
 
 .login-form input,
 .login-form select {
-  width: 100%;
+  width: 30%;
   margin: 10px 0;
   padding: 12px;
   border-radius: 8px;
@@ -38,7 +55,7 @@
 }
 
 .login-btn {
-  width: 100%;
+  width: 30%;
   background: #ff4e50;
   color: #fff;
   padding: 12px;

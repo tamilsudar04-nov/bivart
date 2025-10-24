@@ -1,0 +1,162 @@
+/* ==============================
+   Wishlist Page Styling
+   ============================== */
+
+.wishlist-container {
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Title */
+.wishlist-title {
+  text-align: center;
+  font-size: 4.5vh;
+  margin-bottom: 10vh;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+}
+
+/* When wishlist is empty */
+.empty-wishlist {
+  text-align: center;
+  font-size: 2vh;
+  color: #555;
+  margin-top: 5vh;
+}
+
+.browse-now-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #ff5a5f;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.browse-now-btn:hover {
+  background: #e04c50;
+}
+
+/* Wishlist Items Container */
+.wishlist-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Each Wishlist Item */
+.wishlist-item {
+  display: flex;
+  align-items: center;
+  background: #fdfdfd;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 15px;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+
+.wishlist-item:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transform: translateY(-3px);
+}
+
+/* Product Image */
+.wishlist-image {
+  width: 100px;
+  height: 120px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Product Details */
+.wishlist-details {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.wishlist-brand {
+  font-size: 1.1rem;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.wishlist-title-text {
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.wishlist-price {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Wishlist Actions */
+.wishlist-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Buttons */
+.remove-btn,
+.move-to-cart-btn {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+/* Remove button */
+.remove-btn {
+  background: #ff5a5f;
+  color: white;
+}
+
+.remove-btn:hover {
+  background: #e04c50;
+  transform: scale(1.05);
+}
+
+/* Move to Cart button */
+.move-to-cart-btn {
+  background: #28a745;
+  color: white;
+}
+
+.move-to-cart-btn:hover {
+  background: #218838;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .wishlist-item {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+  }
+
+  .wishlist-details {
+    padding: 15px 0;
+  }
+
+  .wishlist-image {
+    width: 100%;
+    height: 200px;
+  }
+
+  .wishlist-actions {
+    justify-content: center;
+    width: 100%;
+  }
+}

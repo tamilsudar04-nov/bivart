@@ -61,6 +61,11 @@ import d10 from '/src/assets/dress/d10.jpg';
 import d11 from '/src/assets/dress/d11.jpg';
 import d12 from '/src/assets/dress/d12.jpg';
 
+import { useCart } from "../context/CartContext";
+import { useWishlist } from "../context/WishlistProvider";
+
+
+
     //  sarees
 
 const sarees = [
@@ -571,11 +576,15 @@ const sarees = [
 
 
 export default function Products() {
+  const { addToCart } = useCart(); 
+  
+  const { addToWishlist } = useWishlist();
   return (
 
 <div>
 <img className="sale" src={sale} alt="" />
-
+ <p className='bivart'>Bivart</p>
+    <p className='fashion'>Fashion</p>
          {/* sarees */}
 
     <h1 className="sarees">SAREES</h1>
@@ -590,6 +599,20 @@ export default function Products() {
             <span className="old-price">{item.oldPrice}</span>
             <span className="discount">{item.discount}</span>
             </div>
+             {/* 🛒 Add this button */}
+           <button
+  onClick={() => {
+    addToCart(item);
+    alert(`${item.title} added to cart!`);
+  }}
+>
+  Add to Cart
+</button>
+
+ <button className="wishlist-btn" onClick={() => addToWishlist(item)}>
+            💖 Add to Wishlist
+          </button>
+
         </div>
       ))}
     </div>

@@ -1,62 +1,132 @@
- body { 
-  margin: 0;
-   padding: 0;
- height: 100%;
+@import url('https://fonts.cdnfonts.com/css/mommy-lemon');
+@import url('https://fonts.cdnfonts.com/css/saphira-demo');
 
-  }
- 
-nav {
-  
-margin-top: 5vh;
-  top: 0;
-  z-index: 10;
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
+.navbar {
+  display: flex;
+  margin-top: 3vh;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  z-index: 1000;
+}
 
-ul {
+.list {
   list-style: none;
   display: flex;
   align-items: center;
-
-}
-
-
-li {
-  display: inline-block;
-  margin-left: 15vh;
-}
-
-
-nav ul li a{
-  text-decoration: none;
-  color: #222;
-  font-weight: 600;
-  font-size: 16px;
- 
- 
-
-}
-
-nav ul li a:hover {
+  gap: 10vh;
+  margin-left:10vh;
+  padding: 0;
   
+                                      
+}
+
+.list li a {
+  
+  text-decoration: none;
+  color:black;
+  font-weight: bold;
+}
+
+.list li a:hover {
   color: #f39c12;
 }
 
-.nav8{
-  text-decoration: none;
-  color: #222;
-  font-weight: 600;
-  font-size: 16px;
- 
+.nav1{
+  font-family: 'Mommy Lemon', sans-serif; 
+  font-size: 4vh;
+}
+.nav2{ 
+ margin-left: 35vh; 
+ font-size: 2.5vh;
+  font-weight: bold;
+  color: black;
+  font-family: 'Saphira DEMO', sans-serif;
+}
+.nav3{ 
+ font-size: 2.5vh;
+  font-weight: bold;
+  color: black;
+font-family: 'Saphira DEMO', sans-serif;
+}
+.nav4{ 
+ font-size: 2.5vh;
+  font-weight: bold;
+  color: black;
+   font-family: 'Saphira DEMO', sans-serif; 
+}
+.nav5{ 
+ font-size: 2.5vh;
+  font-weight: bold;
+  color: black;
+    font-family: 'Saphira DEMO', sans-serif;
+}
+.nav6{ 
+ font-size: 2.5vh;
+  font-weight: bold;
+  color: black;
+    font-family: 'Saphira DEMO', sans-serif;
+}
+.nav7{ 
+ font-size: 2.5vh;
+  font-weight: bold;
+  color: black;
+    font-family: 'Saphira DEMO', sans-serif;
+}
+/* Login section */
+.login {
+  display: flex;
+  align-items: center;
+  gap: 1vh;
+  cursor: pointer;
+    font-family: 'Saphira DEMO', sans-serif;
+}
+.login span {
+  font-size: 2.5vh;
+  font-weight: bold;
+  color: black;
 }
 
 
 
 
-/* === Responsive for small screens === */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 768px) {
-  nav ul {
+  .navbar {
     flex-direction: column;
-    gap: 10px;
+  }
+
+  .list {
+    flex-direction: column;
+    
+  }
+
+  .login {
+    margin-top: 10px;
   }
 }

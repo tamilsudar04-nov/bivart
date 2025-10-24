@@ -8,11 +8,12 @@ import Women from './Components/Women'
 import Men from './Components/Men'
 import Kids from './Components/Kids'
 import Wishlist from './Components/Wishlist'
-import AddCart from './Components/AddCart'
+
 import Contact from './Components/Contact'
 
 import Login from './Components/Login'
 import Navbar from './Components/Navbar'
+import Cart from './Components/Cart'
 
 
 
@@ -33,7 +34,7 @@ function App() {
           <Route path="/Men" element={<Men/>}/>
           <Route path="/Kids" element={<Kids/>}/>
           <Route path="/Contact" element={<Contact/>}/>
-          <Route path="/Addcart" element={<AddCart/>}/>
+          <Route path="/Cart" element={<Cart/>}/>
           <Route path="/Wishlist" element={<Wishlist/>}/>
           <Route path="/Login" element={<Login />} />
         </Routes>

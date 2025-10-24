@@ -1,8 +1,11 @@
+ 
+@import url('https://fonts.cdnfonts.com/css/mommy-lemon');
+ 
  body { 
   margin: 0;
    padding: 0;
  height: 100%;
-
+background-color:blue ;
   }
 
   .pic{
@@ -10,3 +13,18 @@
     height: 70vh;
     position: relative;
   }
+.bivart{
+  z-index: 2;
+  position: absolute;
+ font-family: 'Mommy Lemon', sans-serif; 
+  font-size: 20vh;
+ margin-top:-22%;  
+ margin-left: 18%;
+}
+.fashion{
+   position: absolute;
+ font-family: 'Mommy Lemon', sans-serif; 
+  font-size: 20vh;
+   margin-top:-22%;  
+   margin-left: 63%;
+}
