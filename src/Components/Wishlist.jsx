@@ -1,15 +1,15 @@
 import React from "react";
 import { useWishlist } from "../context/WishlistProvider";
-import "../Styles/Wishlist.css";0
-import sale from "/src/assets/sale.jpg";
+import "../Styles/Wishlist.css";
+import whislist from "/src/assets/whislist.jpg";
 export default function Wishlist() {
   const { wishlist, removeFromWishlist } = useWishlist();
 
   return (
     <div>
-    <img className="sale" src={sale} alt="" />
-     <p className='bivart'>Bivart</p>
-        <p className='fashion'>Fashion</p>
+    <img className="sale" src={whislist} alt="" />
+     <p className='biv'>Bivart</p>
+        <p className='fas'>Fashion</p>
     <div className="wishlist-container">
       <h1 className="wishlist-title"> Your Wishlist</h1>
 

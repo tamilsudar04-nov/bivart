@@ -1,12 +1,17 @@
 import React from "react";
 import { useCart } from "../context/CartContext";
 import "../Styles/Cart.css"; 
+import sale from "/src/assets/sale.jpg";
 
 export default function Cart() {
   const { cart, removeFromCart, updateQuantity, total } = useCart();
 
   return (
-    <div className="cart-container">
+    <div>
+   <img className="sale" src={sale} alt="" />
+   <p className='bivart'>Bivart</p>
+   <p className='fashion'>Fashion</p>
+   <div className="cart-container">
       <h1 className="cart-title">🛒 Your Shopping Cart</h1>
 
       {cart.length === 0 ? (
@@ -65,5 +70,6 @@ export default function Cart() {
         </>
       )}
     </div>
+     </div>
   );
 }

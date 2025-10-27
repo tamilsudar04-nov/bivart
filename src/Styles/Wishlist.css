@@ -2,6 +2,30 @@
    Wishlist Page Styling
    ============================== */
 
+.biv{
+  z-index: 2;
+  position: absolute;
+ font-family: 'Mommy Lemon', sans-serif; 
+  font-size: 15vh;
+ margin-top:-9%;  
+ margin-left: 29%;
+  color: rgb(36, 7, 64);
+}
+.fas{
+   position: absolute;
+ font-family: 'Mommy Lemon', sans-serif; 
+  font-size: 15vh;
+   margin-top:-9%;  
+   margin-left: 48%;
+   color: rgb(36, 7, 64);
+}
+.sale{
+  height: 60vh;
+  width: 100%;
+  margin-top: 3vh;
+}
+
+   
 .wishlist-container {
   padding: 40px;
   max-width: 900px;
@@ -9,7 +33,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-/* Title */
+
 .wishlist-title {
   text-align: center;
   font-size: 4.5vh;
@@ -18,7 +42,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-/* When wishlist is empty */
 .empty-wishlist {
   text-align: center;
   font-size: 2vh;
@@ -34,7 +57,7 @@
   color: white;
   border-radius: 5px;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: bold;
   transition: background 0.3s ease;
 }
 

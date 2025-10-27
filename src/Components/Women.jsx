@@ -3,6 +3,7 @@ import "../Styles/Women.css";
 
 
 import sale from "/src/assets/sale.jpg";
+import heart from "/src/assets/heart.png";
    
  //  sarees
 import s1 from '/src/assets/sarees/s1.jpg';
@@ -73,7 +74,7 @@ const sarees = [
     id: 1,
     image:s1,
     brand: "Style",
-    title: "Women black Georgette Saree with Blouse Piece",
+    title: "Women black Georgette Saree with beautiful Blouse Piece",
     price: "₹1,395",
     oldPrice: "₹4,497",
     discount: "69%",
@@ -83,7 +84,7 @@ const sarees = [
     id: 2,
     image:s2,
     brand: "Tradition",
-    title: "women traditional maroon cotton saree with gold works",
+    title: "women   traditional maroon cotton saree with gold works",
     price: "₹2,034",
     oldPrice: "₹4,959",
     discount: "59%",
@@ -93,7 +94,7 @@ const sarees = [
     id: 3,
     image:s3 ,
     brand: "Label",
-    title: "Women  grant silk Saree with aari Blouse Piece",
+    title: "Women  grant silk Saree with beautiful aari Blouse Piece",
     price: "₹1,239",
     oldPrice: "₹3,999",
     discount: "65%",
@@ -103,7 +104,7 @@ const sarees = [
     id: 4,
     image:s4 ,
     brand: "Fashion",
-    title: "women white pure cotton saree with blouse piece",
+    title: "women white pure cotton saree with designer cotton blouse piece",
     price: "₹1500",
     oldPrice: "₹5,000",
     discount: "50%",
@@ -113,7 +114,7 @@ const sarees = [
     id: 5,
     image:s5 ,
     brand: "Fashion",
-    title: "women beautiful silk saree with blouse piece",
+    title: "women beautiful silk saree with beautiful designer blouse piece",
     price: "₹1000",
     oldPrice: "₹4000",
     discount: "25%",
@@ -123,7 +124,7 @@ const sarees = [
     id: 6,
     image:s6 ,
     brand: "Label",
-    title: "women cotton blend saree with blouse piece",
+    title: "women cotton blend saree with beautiful designer blouse piece",
     price: "₹2,262",
     oldPrice: "₹5,799",
     discount: "61%",
@@ -133,7 +134,7 @@ const sarees = [
     id: 7,
     image:s7 ,
     brand: "Tradition",
-    title: "women purple pure cotton saree with blouse piece",
+    title: "women purple pure cotton saree with beautiful designer blouse piece",
     price: "₹2,262",
     oldPrice: "₹5,799",
     discount: "50%",
@@ -143,7 +144,7 @@ const sarees = [
     id: 8,
     image:s8,
     brand: "Label",
-    title: "women multi colour pure cotton saree with blouse piece",
+    title: "women multi colour pure cotton saree with beautiful designer blouse piece",
     price: "₹1,000",
     oldPrice: "₹2,999",
     discount: "51%",
@@ -153,7 +154,7 @@ const sarees = [
     id: 9,
     image:s9 ,
     brand: "Tradition",
-    title: "women beautiful silk saree with blouse piece",
+    title: "women beautiful silk saree with beautiful designer blouse piece",
     price: "₹2,262",
     oldPrice: "₹5,799",
     discount: "37%",
@@ -163,7 +164,7 @@ const sarees = [
     id: 10,
     image:s10 ,
     brand: "Label",
-    title: "women kerala saree made with pure cotton",
+    title: "women kerala saree made with beautiful designer pure cotton",
     price: "₹999",
     oldPrice: "₹2,999",
     discount: "44%",
@@ -173,7 +174,7 @@ const sarees = [
     id: 11,
     image:s11,
     brand: "Fashion",
-    title: "women beautiful silk saree with blouse piece",
+    title: "women beautiful silk saree with beautiful designer blouse piece",
     price: "₹2,262",
     oldPrice: "₹8,799",
     discount: "61%",
@@ -183,7 +184,7 @@ const sarees = [
     id: 12,
     image:s12,
     brand: "Fashion",
-    title: "Women blue Georgette Saree with Blouse Piece",
+    title: "Women blue Georgette Saree with beautiful designer Blouse Piece",
     price: "₹1999",
     oldPrice: "₹5,799",
     discount: "75%",
@@ -579,6 +580,7 @@ export default function Products() {
   const { addToCart } = useCart(); 
   
   const { addToWishlist } = useWishlist();
+
   return (
 
 <div>
@@ -588,6 +590,7 @@ export default function Products() {
          {/* sarees */}
 
     <h1 className="sarees">SAREES</h1>
+  
     <div className="container">
       {sarees.map((item) => (
         <div className="card" key={item.id}>
@@ -599,23 +602,22 @@ export default function Products() {
             <span className="old-price">{item.oldPrice}</span>
             <span className="discount">{item.discount}</span>
             </div>
+
+
              {/* 🛒 Add this button */}
-           <button
-  onClick={() => {
-    addToCart(item);
-    alert(`${item.title} added to cart!`);
-  }}
->
-  Add to Cart
-</button>
+         <button className="atc" onClick={() => { addToCart(item);
+    alert(`${item.title} added to cart!`);}}>🛒 Add to Cart</button>
 
- <button className="wishlist-btn" onClick={() => addToWishlist(item)}>
-            💖 Add to Wishlist
+
+ <button className="wis" onClick={() => addToWishlist(item)}>  
+   <img src={heart} alt="" width="30vw" height="30vh"/>
           </button>
+          </div>
 
-        </div>
+       
       ))}
     </div>
+         
 
             {/* kurtis */}
  <h1 className="kurtis">KURTIS</h1>
@@ -630,6 +632,13 @@ export default function Products() {
             <span className="old-price">{item.oldPrice}</span>
             <span className="discount">{item.discount}</span>
             </div>
+
+             <button  className="atc" onClick={() => { addToCart(item);
+    alert(`${item.title} added to cart!`);}}>Add to Cart</button>
+ 
+ <button className="wis" onClick={() => addToWishlist(item)}>  
+   <img src={heart} alt="" width="30vw" height="30vh"/>
+          </button>
         </div>
       ))}
     </div>
@@ -649,6 +658,13 @@ export default function Products() {
             <span className="old-price">{item.oldPrice}</span>
             <span className="discount">{item.discount}</span>
             </div>
+<button  className="atc" onClick={() => { addToCart(item);
+    alert(`${item.title} added to cart!`);}}>Add to Cart</button>
+
+<button className="wis" onClick={() => addToWishlist(item)}>  
+   <img src={heart} alt="" width="30vw" height="30vh"/>
+          </button>
+
         </div>
       ))}
     </div>
@@ -666,6 +682,14 @@ export default function Products() {
             <span className="old-price">{item.oldPrice}</span>
             <span className="discount">{item.discount}</span>
             </div>
+
+            <button  className="atc" onClick={() => { addToCart(item);
+    alert(`${item.title} added to cart!`);}}>Add to Cart</button>
+
+<button className="wis" onClick={() => addToWishlist(item)}>  
+   <img src={heart} alt="" width="30vw" height="30vh"/>
+          </button>
+
         </div>
       ))}
     </div>
