@@ -3,7 +3,7 @@ import "../Styles/Men.css"
 import sale from "/src/assets/sale.jpg"
 import heart from "/src/assets/heart.png"
 
-            //  casuals
+            //  tshirts
 import ts1 from "/src/assets/tshirts/ts1.jpg";
 import ts2 from "/src/assets/tshirts/ts2.jpg";
 import ts3 from "/src/assets/tshirts/ts3.jpg";
@@ -34,9 +34,6 @@ import c12 from "/src/assets/casuals/c12.jpg";
 
 
 
-
-
-
       // formals
 import f1 from "/src/assets/formals/f1.jpg";
 import f2 from "/src/assets/formals/f2.jpg";
@@ -51,9 +48,31 @@ import f10 from "/src/assets/formals/f10.jpg";
 import f11 from "/src/assets/formals/f11.jpg";
 import f12 from "/src/assets/formals/f12.jpg";
 
+
+          //  jeans
+
+import j1 from "/src/assets/jeans/j1.jpg";
+import j2 from "/src/assets/jeans/j2.jpg";
+import j3 from "/src/assets/jeans/j3.jpg";
+import j4 from "/src/assets/jeans/j4.jpg";
+import j5 from "/src/assets/jeans/j5.jpg";
+import j6 from "/src/assets/jeans/j6.jpg";
+import j7 from "/src/assets/jeans/j7.jpg";
+import j8 from "/src/assets/jeans/j8.jpg";
+import j9 from "/src/assets/jeans/j9.jpg";
+import j10 from "/src/assets/jeans/j10.jpg";
+import j11 from "/src/assets/jeans/j11.jpg";
+import j12 from "/src/assets/jeans/j12.jpg";
+
+
+
+
 import { useCart } from '../context/CartContext';
 import { useWishlist } from '../context/WishlistProvider';
 import { Form } from 'react-router-dom';
+
+
+    //  formals
 
 const formals=[
   {
@@ -304,7 +323,7 @@ const casuals=[
   },
  ];
 
-              // formals
+              // tshirts
 
 
 const tshirts =[
@@ -429,8 +448,131 @@ const tshirts =[
  
   },
  ];
-
+            //  jeans
  
+const jeans = [
+  {
+    id: 1,
+    image:j1,
+    brand: "Style",
+    title: "",
+    price: "₹",
+    oldPrice: "₹",
+    discount: "%",
+ 
+  },
+  {
+    id: 2,
+    image:j2,
+    brand: "Style",
+    title: "",
+    price: "₹",
+    oldPrice: "₹",
+    discount: "%",
+ 
+  },
+  {
+    id: 3,
+    image:j3,
+    brand: "Style",
+    title: "",
+    price: "₹",
+    oldPrice: "₹",
+    discount: "%",
+ 
+  },
+  {
+    id: 4,
+    image:j4,
+    brand: "Style",
+    title: "",
+    price: "₹",
+    oldPrice: "₹",
+    discount: "%",
+ 
+  },
+  {
+    id: 5,
+    image:j5,
+    brand: "Style",
+    title: "",
+    price: "₹",
+    oldPrice: "₹",
+    discount: "%",
+ 
+  },
+  {
+    id: 6,
+    image:j6,
+    brand: "Style",
+    title: "",
+    price: "₹",
+    oldPrice: "₹",
+    discount: "%",
+ 
+  },
+  {
+    id: 7,
+    image:j7,
+    brand: "Style",
+    title: "",
+    price: "₹",
+    oldPrice: "₹",
+    discount: "%",
+ 
+  },
+   {
+    id: 8,
+    image:j8,
+    brand: "Style",
+    title: "",
+    price: "₹",
+    oldPrice: "₹",
+    discount: "%",
+ 
+  },
+   {
+    id: 9,
+    image:j9,
+    brand: "Style",
+    title: "",
+    price: "₹",
+    oldPrice: "₹",
+    discount: "%",
+ 
+  },
+   {
+    id: 10,
+    image:j10,
+    brand: "Style",
+    title: "",
+    price: "₹",
+    oldPrice: "₹",
+    discount: "%",
+ 
+  },
+   {
+    id: 11,
+    image:j11,
+    brand: "Style",
+    title: "",
+    price: "₹",
+    oldPrice: "₹",
+    discount: "%",
+ 
+  },
+   {
+    id: 12,
+    image:j12,
+    brand: "Style",
+    title: "",
+    price: "₹",
+    oldPrice: "₹",
+    discount: "%",
+ 
+  },
+ ];
+
    
 export default function Men() {
    const { addToCart } = useCart(); 
@@ -516,7 +658,30 @@ export default function Men() {
            ))}
          </div>
 
+        {/* jeans */}
 
+<h1 className="">JEANS</h1>
+         <div className="container">
+           {jeans.map((item) => (
+             <div className="card" key={item.id}>
+               <img src={item.image} alt={item.title} className="img"/>
+              <h4 className="brand">{item.brand}</h4>
+               <p className="title">{item.title}</p>
+               <div className="price">
+                 <span className="price1">{item.price}</span>
+                 <span className="old-price">{item.oldPrice}</span>
+                 <span className="discount">{item.discount}</span>
+                 </div>
+     
+                  <button  className="atc" onClick={() => { addToCart(item);
+         alert(`${item.title} added to cart!`);}}>Add to Cart</button>
+      
+      <button className="wis" onClick={() => addToWishlist(item)}>  
+        <img src={heart} alt="" width="30vw" height="30vh"/>
+               </button>
+             </div>
+           ))}
+         </div>
 
     </div>
 

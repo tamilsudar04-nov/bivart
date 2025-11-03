@@ -17,6 +17,14 @@ export default function Navbar() {
   const handleLoginClick = () => {
     navigate("/Login"); 
   };
+  const handleLogout = () => {
+    localStorage.removeItem("loggedUser");
+    setLoggedUser(null);
+    alert("You have been logged out.");
+    navigate("/Login");
+    window.location.reload();
+  };
+
   return (
     <div>
       <nav className='navbar'>
@@ -32,6 +40,11 @@ export default function Navbar() {
           <img src={user} width="35vw" height="35vh" alt="User" />
           <span >{loggedUser ? loggedUser.username : "Login"}</span>
         </div>
+         {loggedUser && (
+            <button className="logout-btn" onClick={handleLogout}>
+              Logout
+            </button>
+          )}
         </ul>
       </nav>
     </div>
