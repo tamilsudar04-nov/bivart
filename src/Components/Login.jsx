@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../Styles/Login.css";
 import { useNavigate } from "react-router-dom";
-import sale from "/src/assets/sale.jpg";
+
 
 export default function Login() {
   const [formData, setFormData] = useState({
@@ -68,7 +68,6 @@ export default function Login() {
     window.location.reload();
   };
 
-  // ✅ Logout function
   const handleLogout = () => {
     localStorage.removeItem("loggedUser");
     setLoggedUser(null);
@@ -81,7 +80,7 @@ export default function Login() {
     <div>
       
 
-      {/* ✅ If logged in, show logout view */}
+     
       {loggedUser ? (
         <div className="box">
           <h2>Welcome, {loggedUser.username}!</h2>
@@ -91,7 +90,7 @@ export default function Login() {
           </button>
         </div>
       ) : (
-        /* ✅ If not logged in, show login form */
+       
         <form onSubmit={handleLogin} className="form">
           <h2 className="welcome">Welcome to Bivart Fashion</h2>
           <p className="subtitle">Login or create your account</p>

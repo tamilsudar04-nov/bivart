@@ -17,14 +17,7 @@ export default function Navbar() {
   const handleLoginClick = () => {
     navigate("/Login"); 
   };
-  const handleLogout = () => {
-    localStorage.removeItem("loggedUser");
-    setLoggedUser(null);
-    alert("You have been logged out.");
-    navigate("/Login");
-    window.location.reload();
-  };
-
+ 
   return (
     <div>
       <nav className='navbar'>
@@ -36,15 +29,11 @@ export default function Navbar() {
             <li className='nav5'><Link to='/Contact'>Contact</Link></li>
              <li className='nav6'><Link to='/Wishlist'><img src={wishlist} width="35vw" height="35vh" alt="" />Wishlist</Link></li>
               <li className='nav7'><Link to='/Cart'><img src={addtocart} width="35vw" height="35vh"alt="" />Add to Cart</Link></li>
-               <div className="login" onClick={handleLoginClick}>
+               <div className="Login" onClick={handleLoginClick}>
           <img src={user} width="35vw" height="35vh" alt="User" />
           <span >{loggedUser ? loggedUser.username : "Login"}</span>
         </div>
-         {loggedUser && (
-            <button className="logout-btn" onClick={handleLogout}>
-              Logout
-            </button>
-          )}
+        
         </ul>
       </nav>
     </div>
