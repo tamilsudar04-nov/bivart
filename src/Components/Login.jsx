@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "../Styles/Login.css";
 import { useNavigate } from "react-router-dom";
-
-
+ import log from "../assets/log.jpg";
+import log2 from "../assets/log2.jpg";
 export default function Login() {
   const [formData, setFormData] = useState({
     username: "",
@@ -80,20 +80,22 @@ export default function Login() {
     <div>
       
 
-     
+    
       {loggedUser ? (
-        <div className="box">
-          <h2>Welcome, {loggedUser.username}!</h2>
-          <p>You are already logged in.</p>
+        <div className="BOX">
+           <img src={log2} alt=""  className="log2"/>
+          <h2 className="welcome">Welcome, {loggedUser.username}!</h2>
+          <p className="subtitle">You are already logged in.</p>
           <button className="logout" onClick={handleLogout}>
             Logout
-          </button>
-        </div>
+          </button>'
+          </div>
+     
       ) : (
        
         <form onSubmit={handleLogin} className="form">
-          <h2 className="welcome">Welcome to Bivart Fashion</h2>
-          <p className="subtitle">Login or create your account</p>
+          <h2 >Welcome to Bivart Fashion</h2>
+          <p >Login or create your account</p>
           
           <input
             type="text"
@@ -154,6 +156,7 @@ export default function Login() {
           <button type="submit" className="login">
             Continue
           </button>
+           <img src={log} alt=""  className="log"/>
         </form>
       )}
     </div>

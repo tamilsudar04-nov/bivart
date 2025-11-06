@@ -1,19 +1,29 @@
 
-body {
-  
-    margin: 0;
+body{
+   margin: 0;
   padding: 0;
   height: 100%;
 }
 
+.log{
+  position: absolute;
+  z-index: 10;
+width:62vw;
+height: 90vh;
+ margin-top: -83vh;
+margin-left: 8vh;
 
+
+}
 .form {
-  background: #fff;
-  width: 380px;
-  padding: 2.5rem;
-  border-radius: 20px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  position: relative;
+  background:rgb(238, 233, 224);
+  width: 100%;
+  padding: 5vh;
+ 
+  box-shadow: 0 4vh 15vh rgba(0, 0, 0, 0.1);
+
+
   transition: transform 0.3s ease;
 }
 
@@ -23,25 +33,25 @@ body {
 
 
 .welcome {
-  font-size: 1.6rem;
-  font-weight: 600;
+  font-size: 5vh;
+  font-weight:bold;
   color: #111;
-  margin-bottom: 0.5rem;
+ margin-right: 15vh;
 }
 
 .subtitle {
   color: #666;
-  font-size: 0.9rem;
-  margin-bottom: 1.5rem;
+  font-size: 3vh;
+  margin-left: 5vh;
 }
 
 /* ===== Input Fields ===== */
 input,
 select {
-  width: 100%;
-  padding: 10px 14px;
+  width: 30%;
+  padding: 1.70vh 2vh;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 1.5vh;
   font-size: 0.95rem;
   transition: 0.2s;
 }
@@ -55,7 +65,7 @@ select:focus {
 
 /* ===== Button ===== */
 .login {
-  width: 100%;
+  width: 30%;
   background: linear-gradient(90deg, #ff5b9e, #ff7eb3);
   color: #fff;
   border: none;
@@ -73,36 +83,47 @@ select:focus {
 }
 
 /* ===== Logged-In Box ===== */
-.box {
-  background: #fff;
-  width: 350px;
-  padding: 2rem;
-  border-radius: 20px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
 
-.box h2 {
-  font-size: 1.4rem;
-  margin-bottom: 10px;
+.log2{
+
+width:100%;
+height: 80vh;
+margin-top: 3vh;
+position: relative;
+
+}
+.welcome{
+  font-size: 7vh;
+  z-index: 1000;
   color: #222;
+ position: absolute; 
+ margin-left: 120vh;
+ margin-top: -70vh;
 }
 
-.box p {
+.subtitle{
   color: #555;
-  font-size: 0.95rem;
-  margin-bottom: 20px;
+  font-size: 4vh;
+ margin-top: -60vh;
+  z-index: 10;
+   position: absolute;
+   margin-left: 132vh;
 }
 
-/* ===== Logout Button ===== */
+
 .logout {
   background: #222;
   color: #fff;
-  padding: 10px 20px;
-  border-radius: 8px;
+  padding: 1.5vh 3vh;
+  border-radius: 3vh;
   border: none;
   cursor: pointer;
   transition: 0.3s;
+  margin-left: -62vh;
+  margin-top: 32vh;
+  
+     position: absolute;
+      z-index: 1000;
 }
 
 .logout:hover {

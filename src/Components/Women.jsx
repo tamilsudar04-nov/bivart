@@ -1,7 +1,9 @@
 import React from "react";
 import "../Styles/Women.css";
 
-
+import women1 from "../assets/carousel/women1.jpg";
+import women2 from "../assets/carousel/women2.jpg";
+import women3 from "../assets/carousel/women3.jpg";
 import sale from "/src/assets/sale.jpg";
 import heart from "/src/assets/heart.png";
    
@@ -200,120 +202,120 @@ const sarees = [
     id: 1,
     image:k1,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "trendy stylish elegent womens kurtis",
+    price: "₹800",
+    oldPrice: "₹1000",
+    discount: "20%",
   },
   {
     id: 2,
     image:k2,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
+    title: "trendy stylish elegent womens kurtis",
+     price: "₹500",
+    oldPrice: "₹1000",
+    discount: "50%",
  
   },
   {
     id: 3,
     image:k7,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
+    title: "trendy stylish elegent womens kurtis",
+    price: "₹600",
+    oldPrice: "₹1200",
+    discount: "50%",
  
   },
   {
     id: 4,
     image:k4,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
+    title: "trendy stylish elegent womens kurtis",
+   price: "₹1000",
+    oldPrice: "₹1500",
+    discount: "40%",
  
   },
   {
     id: 5,
     image:k5,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
+    title: "trendy stylish elegent womens kurtis",
+    price: "₹400",
+    oldPrice: "₹900",
+    discount: "30%",
  
   },
   {
     id: 6,
     image:k13,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
+    title: "trendy stylish elegent womens kurtis",
+    price: "₹500",
+    oldPrice: "1200₹",
+    discount: "55%",
  
   },
   {
     id: 7,
     image:k3,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
+    title: "trendy stylish elegent womens kurtis",
+    price: "₹800",
+    oldPrice: "₹1000",
+    discount: "20%",
  
   },
    {
     id: 8,
     image:k8,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
+    title: "trendy stylish elegent womens kurtis",
+    price: "₹1000",
+    oldPrice: "₹1500",
+    discount: "40%",
  
   },
    {
     id: 9,
     image:k9,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
+    title: "trendy stylish elegent womens kurtis",
+    price: "₹1000",
+    oldPrice: "₹2000",
+    discount: "50%",
  
   },
    {
     id: 10,
     image:k12,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
+    title: "trendy stylish elegent womens kurtis",
+    price: "₹799",
+    oldPrice: "₹1999",
+    discount: "20%",
  
   },
    {
     id: 11,
     image:k11,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
+    title: "trendy stylish elegent womens kurtis",
+     price: "₹999",
+    oldPrice: "₹1999",
+    discount: "50%",
+ 
  
   },
    {
     id: 12,
     image:k6,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
+    title: "trendy stylish elegent womens kurtis",
+     price: "₹900",
+    oldPrice: "₹1000",
+    discount: "10%",
  
   },
  ];
@@ -584,9 +586,80 @@ export default function Products() {
   return (
 
 <div>
-<img className="sale" src={sale} alt="" />
- <p className='bivart'>Bivart</p>
-    <p className='fashion'>Fashion</p>
+
+
+
+      <div className="carousel">
+  <div
+    id="demo"
+    className="carousel slide"
+    data-bs-ride="carousel"       
+    data-bs-interval="2000"       
+    style={{ width: "100%", height: "20%" }}
+  >
+    {/* Indicators/dots */}
+    <div className="carousel-indicators">
+      <button
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide-to="0"
+        className="active"
+      ></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+
+    {/* The slideshow/carousel */}
+    <div className="carousel-inner">
+      <div className="carousel-item active">
+        <img
+          src={women2}
+          alt="bd1"
+          className="bdpic1"
+          style={{ width: "100%", height: "20%" }}
+        />
+      </div>
+
+      <div className="carousel-item">
+        <img
+          src={women1}
+          alt="bd2"
+          className="bdpic2"
+          style={{ width: "100%", height: "20%" }}
+        />
+      </div>
+
+      <div className="carousel-item">
+        <img
+          src={women3}
+          alt="bd3"
+          className="bdpic3"
+          style={{ width: "100%", height: "20%" }}
+        />
+      </div>
+    </div>
+
+    {/* Controls */}
+    <button
+      className="carousel-control-prev"
+      type="button"
+      data-bs-target="#demo"
+      data-bs-slide="prev"
+    >
+      <span className="carousel-control-prev-icon"></span>
+    </button>
+
+    <button
+      className="carousel-control-next"
+      type="button"
+      data-bs-target="#demo"
+      data-bs-slide="next"
+    >
+      <span className="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</div>
+
          {/* sarees */}
 
     <h1 className="sarees">SAREES</h1>
