@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import user from '../assets/Tops/user.jpg';
-import addtocart from '../assets/Tops/addtocart.jpg';
-import wishlist from '../assets/Tops/Wishlist.jpg';
+import user from "../assets/user.jpg"
+import addtocart from '../assets/addtocart.jpg';
+import wishlist from '../assets/Wishlist.jpg';
 import '../Styles/Navbar.css';
 
 export default function Navbar() {

@@ -1,6 +1,6 @@
 import React from 'react'
 import "../Styles/Men.css"
-import sale from "/src/assets/sale.jpg"
+
 import heart from "/src/assets/heart.png"
 
 
@@ -79,504 +79,458 @@ import { Form } from 'react-router-dom';
 
     //  formals
 
-const formals=[
+const formals = [
   {
     id: 1,
-    image:f1,
+    image: f1,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Classic Men's Formal Shirt",
+    price: "₹1,199",
+    oldPrice: "₹1,799",
+    discount: "33%",
   },
   {
     id: 2,
-    image:f2,
+    image: f2,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Classic Men's Formal Shirt",
+    price: "₹1,299",
+    oldPrice: "₹1,999",
+    discount: "35%",
   },
   {
     id: 3,
-    image:f3,
+    image: f3,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Classic Men's Formal Shirt",
+    price: "₹999",
+    oldPrice: "₹1,499",
+    discount: "33%",
   },
   {
     id: 4,
-    image:f4,
+    image: f4,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Classic Men's Formal Shirt",
+    price: "₹1,499",
+    oldPrice: "₹2,099",
+    discount: "29%",
   },
   {
     id: 5,
-    image:f5,
+    image: f5,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Classic Men's Formal Shirt",
+    price: "₹1,099",
+    oldPrice: "₹1,699",
+    discount: "35%",
   },
   {
     id: 6,
-    image:f6,
+    image: f6,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Classic Men's Formal Shirt",
+    price: "₹1,249",
+    oldPrice: "₹1,899",
+    discount: "34%",
   },
   {
     id: 7,
-    image:f7,
+    image: f7,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Classic Men's Formal Shirt",
+    price: "₹1,399",
+    oldPrice: "₹2,099",
+    discount: "33%",
   },
-   {
+  {
     id: 8,
-    image:f8,
+    image: f8,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Classic Men's Formal Shirt",
+    price: "₹1,149",
+    oldPrice: "₹1,699",
+    discount: "32%",
   },
-   {
+  {
     id: 9,
-    image:f9,
+    image: f9,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Classic Men's Formal Shirt",
+    price: "₹1,599",
+    oldPrice: "₹2,299",
+    discount: "30%",
   },
-   {
+  {
     id: 10,
-    image:f10,
+    image: f10,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Classic Men's Formal Shirt",
+    price: "₹1,049",
+    oldPrice: "₹1,599",
+    discount: "34%",
   },
-   {
+  {
     id: 11,
-    image:f11,
+    image: f11,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Classic Men's Formal Shirt",
+    price: "₹1,199",
+    oldPrice: "₹1,799",
+    discount: "33%",
   },
-   {
+  {
     id: 12,
-    image:f12,
+    image: f12,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Classic Men's Formal Shirt",
+    price: "₹1,299",
+    oldPrice: "₹1,999",
+    discount: "35%",
   },
- ];
+];
 
 
     // casuals
 
-const casuals=[
+const casuals = [
   {
     id: 1,
-    image:c1,
+    image: c1,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Stylish Men's Casual Shirt",
+    price: "₹999",
+    oldPrice: "₹1,499",
+    discount: "33%",
   },
   {
     id: 2,
-    image:c2,
+    image: c2,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Stylish Men's Casual Shirt",
+    price: "₹1,099",
+    oldPrice: "₹1,699",
+    discount: "35%",
   },
   {
     id: 3,
-    image:c3,
+    image: c3,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Stylish Men's Casual Shirt",
+    price: "₹1,249",
+    oldPrice: "₹1,899",
+    discount: "34%",
   },
   {
     id: 4,
-    image:c4,
+    image: c4,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Stylish Men's Casual Shirt",
+    price: "₹899",
+    oldPrice: "₹1,399",
+    discount: "36%",
   },
   {
     id: 5,
-    image:c5,
+    image: c5,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Stylish Men's Casual Shirt",
+    price: "₹1,299",
+    oldPrice: "₹1,999",
+    discount: "35%",
   },
   {
     id: 6,
-    image:c6,
+    image: c6,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Stylish Men's Casual Shirt",
+    price: "₹1,099",
+    oldPrice: "₹1,699",
+    discount: "35%",
   },
   {
     id: 7,
-    image:c7,
+    image: c7,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Stylish Men's Casual Shirt",
+    price: "₹1,149",
+    oldPrice: "₹1,799",
+    discount: "36%",
   },
-   {
+  {
     id: 8,
-    image:c8,
+    image: c8,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Stylish Men's Casual Shirt",
+    price: "₹1,199",
+    oldPrice: "₹1,899",
+    discount: "37%",
   },
-   {
+  {
     id: 9,
-    image:c9,
+    image: c9,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Stylish Men's Casual Shirt",
+    price: "₹1,049",
+    oldPrice: "₹1,599",
+    discount: "34%",
   },
-   {
+  {
     id: 10,
-    image:c10,
+    image: c10,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Stylish Men's Casual Shirt",
+    price: "₹999",
+    oldPrice: "₹1,499",
+    discount: "33%",
   },
-   {
+  {
     id: 11,
-    image:c11,
+    image: c11,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Stylish Men's Casual Shirt",
+    price: "₹1,299",
+    oldPrice: "₹1,999",
+    discount: "35%",
   },
-   {
+  {
     id: 12,
-    image:c12,
+    image: c12,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Stylish Men's Casual Shirt",
+    price: "₹1,199",
+    oldPrice: "₹1,799",
+    discount: "33%",
   },
- ];
+];
 
               // tshirts
 
 
-const tshirts =[
+const tshirts = [
   {
     id: 1,
-    image:ts1,
+    image: ts1,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Trendy Men's Cotton T-Shirt",
+    price: "₹799",
+    oldPrice: "₹1,199",
+    discount: "33%",
   },
   {
     id: 2,
-    image:ts2,
+    image: ts2,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Trendy Men's Cotton T-Shirt",
+    price: "₹699",
+    oldPrice: "₹1,099",
+    discount: "36%",
   },
   {
     id: 3,
-    image:ts3,
+    image: ts3,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Trendy Men's Cotton T-Shirt",
+    price: "₹849",
+    oldPrice: "₹1,299",
+    discount: "35%",
   },
   {
     id: 4,
-    image:ts4,
+    image: ts4,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Trendy Men's Cotton T-Shirt",
+    price: "₹749",
+    oldPrice: "₹1,199",
+    discount: "38%",
   },
   {
     id: 5,
-    image:ts5,
+    image: ts5,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Trendy Men's Cotton T-Shirt",
+    price: "₹899",
+    oldPrice: "₹1,399",
+    discount: "36%",
   },
   {
     id: 6,
-    image:ts6,
+    image: ts6,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Trendy Men's Cotton T-Shirt",
+    price: "₹799",
+    oldPrice: "₹1,299",
+    discount: "38%",
   },
   {
     id: 7,
-    image:ts7,
+    image: ts7,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Trendy Men's Cotton T-Shirt",
+    price: "₹849",
+    oldPrice: "₹1,299",
+    discount: "35%",
   },
-   {
+  {
     id: 8,
-    image:ts8,
+    image: ts8,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Trendy Men's Cotton T-Shirt",
+    price: "₹749",
+    oldPrice: "₹1,099",
+    discount: "32%",
   },
-   {
+  {
     id: 9,
-    image:ts9,
+    image: ts9,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Trendy Men's Cotton T-Shirt",
+    price: "₹899",
+    oldPrice: "₹1,499",
+    discount: "40%",
   },
-   {
+  {
     id: 10,
-    image:ts10,
+    image: ts10,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Trendy Men's Cotton T-Shirt",
+    price: "₹699",
+    oldPrice: "₹1,099",
+    discount: "36%",
   },
-   {
+  {
     id: 11,
-    image:ts11,
+    image: ts11,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Trendy Men's Cotton T-Shirt",
+    price: "₹849",
+    oldPrice: "₹1,299",
+    discount: "35%",
   },
-   {
+  {
     id: 12,
-    image:ts12,
+    image: ts12,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Trendy Men's Cotton T-Shirt",
+    price: "₹799",
+    oldPrice: "₹1,199",
+    discount: "33%",
   },
- ];
+];
+
             //  jeans
  
 const jeans = [
   {
     id: 1,
-    image:j1,
+    image: j1,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Stylish Men's Denim Jeans",
+    price: "₹1,499",
+    oldPrice: "₹2,099",
+    discount: "29%",
   },
   {
     id: 2,
-    image:j2,
+    image: j2,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Stylish Men's Denim Jeans",
+    price: "₹1,299",
+    oldPrice: "₹1,899",
+    discount: "32%",
   },
   {
     id: 3,
-    image:j3,
+    image: j3,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Stylish Men's Denim Jeans",
+    price: "₹1,599",
+    oldPrice: "₹2,299",
+    discount: "30%",
   },
   {
     id: 4,
-    image:j4,
+    image: j4,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Stylish Men's Denim Jeans",
+    price: "₹1,399",
+    oldPrice: "₹2,099",
+    discount: "33%",
   },
   {
     id: 5,
-    image:j5,
+    image: j5,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Stylish Men's Denim Jeans",
+    price: "₹1,199",
+    oldPrice: "₹1,799",
+    discount: "33%",
   },
   {
     id: 6,
-    image:j6,
+    image: j6,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Stylish Men's Denim Jeans",
+    price: "₹1,499",
+    oldPrice: "₹2,199",
+    discount: "32%",
   },
   {
     id: 7,
-    image:j7,
+    image: j7,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Stylish Men's Denim Jeans",
+    price: "₹1,349",
+    oldPrice: "₹1,999",
+    discount: "33%",
   },
-   {
+  {
     id: 8,
-    image:j8,
+    image: j8,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Stylish Men's Denim Jeans",
+    price: "₹1,599",
+    oldPrice: "₹2,299",
+    discount: "30%",
   },
-   {
+  {
     id: 9,
-    image:j9,
+    image: j9,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Stylish Men's Denim Jeans",
+    price: "₹1,249",
+    oldPrice: "₹1,899",
+    discount: "34%",
   },
-   {
+  {
     id: 10,
-    image:j10,
+    image: j10,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Stylish Men's Denim Jeans",
+    price: "₹1,399",
+    oldPrice: "₹2,099",
+    discount: "33%",
   },
-   {
+  {
     id: 11,
-    image:j11,
+    image: j11,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Stylish Men's Denim Jeans",
+    price: "₹1,499",
+    oldPrice: "₹2,099",
+    discount: "29%",
   },
-   {
+  {
     id: 12,
-    image:j12,
+    image: j12,
     brand: "Style",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Stylish Men's Denim Jeans",
+    price: "₹1,299",
+    oldPrice: "₹1,999",
+    discount: "35%",
   },
- ];
+];
+
 
    
 export default function Men() {
@@ -595,7 +549,7 @@ export default function Men() {
     className="carousel slide"
     data-bs-ride="carousel"       
     data-bs-interval="2000"       
-    style={{ width: "100%", height: "20%" }}
+    style={{ width: "100%", height: "80vh" }}
   >
     {/* Indicators/dots */}
     <div className="carousel-indicators">
@@ -616,7 +570,7 @@ export default function Men() {
           src={men2}
           alt="bd1"
           className="bdpic1"
-          style={{ width: "100%", height: "20%" }}
+          style={{ width: "100%", height: "90vh" }}
         />
       </div>
 
@@ -625,7 +579,7 @@ export default function Men() {
           src={men1}
           alt="bd2"
           className="bdpic2"
-          style={{ width: "100%", height: "20%" }}
+          style={{ width: "100%", height: "90vh" }}
         />
       </div>
 
@@ -634,7 +588,7 @@ export default function Men() {
           src={men3}
           alt="bd3"
           className="bdpic3"
-          style={{ width: "100%", height: "20%" }}
+          style={{ width: "100%", height: "90vh" }}
         />
       </div>
     </div>
@@ -714,7 +668,7 @@ export default function Men() {
 
          {/* casuals */}
 
-  <h1 className="causals">CASUALS</h1>
+  <h1 className="casuals">CASUALS</h1>
          <div className="container">
            {casuals.map((item) => (
              <div className="card" key={item.id}>
@@ -739,7 +693,7 @@ export default function Men() {
 
         {/* jeans */}
 
-<h1 className="">JEANS</h1>
+<h1 className="jeans">JEANS</h1>
          <div className="container">
            {jeans.map((item) => (
              <div className="card" key={item.id}>

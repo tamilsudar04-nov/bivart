@@ -6,46 +6,29 @@ body{
  height: 100%;
   
 }
-.bivart{
-  z-index: 2;
-  position: absolute;
- font-family: 'Mommy Lemon', sans-serif; 
-  font-size: 20vh;
- margin-top:-22%;  
- margin-left: 18%;
-}
-.fashion{
-   position: absolute;
- font-family: 'Mommy Lemon', sans-serif; 
-  font-size: 20vh;
-   margin-top:-22%;  
-   margin-left: 63%;
-}
-.sale{
-  height: 60vh;
-  width: 100%;
-  margin-top: 3vh;
-}
-.sarees{
+
+
+
+.tshirts{
   font-weight: bold;
   text-align: center;
-  margin-top: 5vh;
+  margin-top: 20vh;
  font-family: 'Covington SC Cond', sans-serif;
                                                 
 }
-.kurtis{
+.formals{
   font-weight: bold;
   text-align: center;
   margin-top: 5vh;
   font-family: 'Covington SC Cond', sans-serif;
 }
-.bottom{
+.casuals{
   font-weight: bold;
   text-align: center;
   margin-top: 5vh;
 font-family: 'Covington SC Cond', sans-serif;
 }
-.dress{
+.jeans{
   font-weight: bold;
   text-align: center;
   margin-top: 5vh;

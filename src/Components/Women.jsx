@@ -327,120 +327,119 @@ const sarees = [
     id: 1,
     image:b1,
     brand: "Fashion",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
+    title: "Chic & Comfy Bottom Wear for Every Mood",
+    price: "₹900",
+    oldPrice: "₹1000",
+    discount: "10%",
  
   },
    {
     id: 2,
     image:b2,
     brand: "Fashion",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
+    title: "Chic & Comfy Bottom Wear for Every Mood",
+    price: "₹999",
+    oldPrice: "₹1999",
+    discount: "50%",
  
   },
    {
     id: 3,
     image:b3,
     brand: "Fashion",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
+    title: "Chic & Comfy Bottom Wear for Every Mood",
+   price: "₹799",
+    oldPrice: "₹1999",
+    discount: "20%",
  
   },
    {
     id: 4,
     image:b4,
     brand: "Fashion",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
+    title: "Chic & Comfy Bottom Wear for Every Mood",
+    price: "₹1000",
+    oldPrice: "₹2000",
+    discount: "50%",
  
   },
    {
     id: 5,
     image:b5,
     brand: "Fashion",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
+    title: "Chic & Comfy Bottom Wear for Every Mood",
+    price: "₹1000",
+    oldPrice: "₹1500",
+    discount: "40%",
  
   },
    {
     id: 6,
     image:b6,
     brand: "Fashion",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Chic & Comfy Bottom Wear for Every Mood",
+   price: "₹800",
+    oldPrice: "₹1000",
+    discount: "20%",
   },
   {
     id: 7,
     image:b7,
     brand: "Fashion",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
+    title: "Chic & Comfy Bottom Wear for Every Mood",
+     price: "₹500",
+    oldPrice: "1200₹",
+    discount: "55%",
  
   },
   {
     id: 8,
     image:b8,
     brand: "Fashion",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Chic & Comfy Bottom Wear for Every Mood",
+   price: "₹400",
+    oldPrice: "₹900",
+    discount: "30%",
   },
   {
     id: 9,
     image:b9,
     brand: "Fashion",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
+    title: "Chic & Comfy Bottom Wear for Every Mood",
+    price: "₹1000",
+    oldPrice: "₹1500",
+    discount: "40%",
  
   },
   {
     id: 10,
     image:b10,
     brand: "Fashion",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
+    title: "Chic & Comfy Bottom Wear for Every Mood",
+     price: "₹600",
+    oldPrice: "₹1200",
+    discount: "50%",
+ 
  
   },
 {
     id: 11,
     image:b11,
     brand: "Fashion",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
+    title: "Chic & Comfy Bottom Wear for Every Mood",
+   price: "₹500",
+    oldPrice: "₹1000",
+    discount: "50%",
  
   },
   {
     id: 12,
     image: b12,
     brand: "Fashion",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
+    title: "Chic & Comfy Bottom Wear for Every Mood",
+     price: "₹800",
+    oldPrice: "₹1000",
+    discount: "20%",
  
   }
 
@@ -448,130 +447,117 @@ const sarees = [
    
    
   //  DRESS
-
-     const dress =[
-      {
+     const dress = [
+  {
     id: 1,
-    image:d1,
+    image: d1,
     brand: "Fashion",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "High-Waist Straight Jeans",
+    price: "₹1,299",
+    oldPrice: "₹1,899",
+    discount: "32%",
   },
   {
     id: 2,
-    image:d2,
+    image: d2,
     brand: "Fashion",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Cotton Wide-Leg Trousers",
+    price: "₹999",
+    oldPrice: "₹1,599",
+    discount: "38%",
   },
   {
     id: 3,
-    image:d3,
+    image: d3,
     brand: "Fashion",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Slim Fit Black Jeggings",
+    price: "₹849",
+    oldPrice: "₹1,299",
+    discount: "35%",
   },
   {
     id: 4,
-    image:d4,
+    image: d4,
     brand: "Fashion",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Casual Denim Shorts",
+    price: "₹749",
+    oldPrice: "₹1,099",
+    discount: "32%",
   },
   {
     id: 5,
-    image:d5,
+    image: d5,
     brand: "Fashion",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Printed Flared Skirt",
+    price: "₹899",
+    oldPrice: "₹1,499",
+    discount: "40%",
   },
   {
     id: 6,
-    image:d13,
+    image: d13,
     brand: "Fashion",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Classic Blue Denim",
+    price: "₹1,199",
+    oldPrice: "₹1,799",
+    discount: "33%",
   },
   {
     id: 7,
-    image:d7,
+    image: d7,
     brand: "Fashion",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Cargo Joggers for Women",
+    price: "₹1,099",
+    oldPrice: "₹1,699",
+    discount: "35%",
   },
   {
     id: 8,
-    image:d8,
+    image: d8,
     brand: "Fashion",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Stretchable Skinny Jeans",
+    price: "₹1,249",
+    oldPrice: "₹1,999",
+    discount: "38%",
   },
   {
     id: 9,
-    image:d9,
+    image: d9,
     brand: "Fashion",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Casual Linen Pants",
+    price: "₹1,149",
+    oldPrice: "₹1,699",
+    discount: "32%",
   },
   {
     id: 10,
-    image:d10,
+    image: d10,
     brand: "Fashion",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Pleated Mini Skirt",
+    price: "₹799",
+    oldPrice: "₹1,199",
+    discount: "33%",
   },
   {
     id: 11,
-    image:d11,
+    image: d11,
     brand: "Fashion",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Relaxed Fit Culottes",
+    price: "₹1,049",
+    oldPrice: "₹1,599",
+    discount: "34%",
   },
   {
     id: 12,
-    image:d12,
+    image: d12,
     brand: "Fashion",
-    title: "",
-    price: "₹",
-    oldPrice: "₹",
-    discount: "%",
- 
+    title: "Stylish Bootcut Jeans",
+    price: "₹1,399",
+    oldPrice: "₹2,099",
+    discount: "33%",
   },
-  
-     ];
+];
+
 
 
 
@@ -595,7 +581,7 @@ export default function Products() {
     className="carousel slide"
     data-bs-ride="carousel"       
     data-bs-interval="2000"       
-    style={{ width: "100%", height: "20%" }}
+    style={{ width: "100%", height: "90vh" }}
   >
     {/* Indicators/dots */}
     <div className="carousel-indicators">
@@ -616,7 +602,7 @@ export default function Products() {
           src={women2}
           alt="bd1"
           className="bdpic1"
-          style={{ width: "100%", height: "20%" }}
+          style={{ width: "100%", height: "90vh" }}
         />
       </div>
 
@@ -625,7 +611,7 @@ export default function Products() {
           src={women1}
           alt="bd2"
           className="bdpic2"
-          style={{ width: "100%", height: "20%" }}
+          style={{ width: "100%", height: "90vh" }}
         />
       </div>
 
@@ -634,7 +620,7 @@ export default function Products() {
           src={women3}
           alt="bd3"
           className="bdpic3"
-          style={{ width: "100%", height: "20%" }}
+          style={{ width: "100%", height: "90vh" }}
         />
       </div>
     </div>

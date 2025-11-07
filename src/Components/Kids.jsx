@@ -4,7 +4,7 @@ import "../Styles/Kids.css";
 
 import kids1 from "../assets/carousel/kids1.jpg" 
 import heart from "../assets/heart.png";
-import sale from "../assets/sale.jpg";
+
 import kids3 from "../assets/carousel/kids3.jpg";
 import kids2 from "../assets/carousel/kids2.jpg";
     // boys
@@ -299,7 +299,7 @@ export default function Kids() {
     className="carousel slide"
     data-bs-ride="carousel"      
     data-bs-interval="2000"       
-    style={{ width: "100%", height: "20%" }}
+    style={{ width: "100%", height: "90vh" }}
   >
     {/* Indicators/dots */}
     <div className="carousel-indicators">
@@ -320,7 +320,7 @@ export default function Kids() {
           src={kids2}
           alt="bd1"
           className="bdpic1"
-          style={{ width: "100%", height: "20%" }}
+          style={{ width: "100%", height: "90vh" }}
         />
       </div>
 
@@ -329,7 +329,7 @@ export default function Kids() {
           src={kids3}
           alt="bd2"
           className="bdpic2"
-          style={{ width: "100%", height: "20%" }}
+          style={{ width: "100%", height: "90vh" }}
         />
       </div>
 
@@ -338,7 +338,7 @@ export default function Kids() {
           src={kids1}
           alt="bd3"
           className="bdpic3"
-          style={{ width: "100%", height: "20%" }}
+          style={{ width: "100%", height: "90vh" }}
         />
       </div>
     </div>

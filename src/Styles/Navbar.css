@@ -20,8 +20,8 @@ body {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 10vh;
-  margin-left:10h;
+  gap: 9vh;
+ 
   padding: 0;
   
                                       
@@ -40,11 +40,11 @@ body {
 
 .nav1{
   font-family: 'Mommy Lemon', sans-serif; 
-  font-size: 4vh;
+  font-size: 5.5vh;
   margin-left: 10vh;
 }
 .nav2{ 
- margin-left: 40vh; 
+ margin-left: 35vh; 
  font-size: 2.5vh;
   font-weight: bold;
   color: black;

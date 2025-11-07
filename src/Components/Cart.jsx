@@ -1,16 +1,15 @@
 import React from "react";
 import { useCart } from "../context/CartContext";
 import "../Styles/Cart.css"; 
-import sale from "/src/assets/sale.jpg";
+import cta from "../assets/cta.jpg";
 
 export default function Cart() {
   const { cart, removeFromCart, updateQuantity, total } = useCart();
 
   return (
     <div>
-   <img className="sale" src={sale} alt="" />
-   <p className='bivart'>Bivart</p>
-   <p className='fashion'>Fashion</p>
+   <img className="sale" src={cta} alt="" />
+   
    <div className="cart-container">
       <h1 className="cart-title">🛒 Your Shopping Cart</h1>
 
