@@ -119,10 +119,10 @@ position: relative;
   border: none;
   cursor: pointer;
   transition: 0.3s;
-  margin-left: -62vh;
+  margin-left: -60vh;
   margin-top: 32vh;
-  
-     position: absolute;
+  width: fit-content;
+ position: absolute;
       z-index: 1000;
 }
 
