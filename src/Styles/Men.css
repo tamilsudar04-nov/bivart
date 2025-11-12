@@ -109,7 +109,79 @@ position: absolute;
 }
 
 .discount {
-  color: blue;
+  color: rgb(198, 66, 247);
   font-weight: 600;
   font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+  .container {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1vh !important;
+    padding: 2vh !important;
+  }
+
+  .card {
+    position: relative !important;
+    border-radius: 1.2vh !important;
+    overflow: hidden !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .img {
+    width: 100% !important;
+    height: 25vh !important;
+    object-fit: cover !important;
+  }
+
+  .brand, .title {
+    text-align: center !important;
+  }
+
+  .atc {
+    width: 100% !important;
+    height: 5vh !important;
+    font-size: 1.8vh !important;
+  }
+
+  .wis {
+    position: absolute !important;
+    top: -1vh !important;
+    right: 2.5vh !important;
+    background: none !important;
+    border: none !important;
+    width: 0.5vh !important;
+    height: 0.5vh !important;
+    cursor: pointer !important;
+  }
+  .brand { font-size: 2.3vh !important; text-align: center; margin: 6px 4px 0 !important; }
+  .title { font-size: 1.8vh !important; text-align: center; color: #555; margin: 2px 6px !important; }
+  .price { font-size: 2.5 !important; display:flex; justify-content:left; gap:0.6vh !important; }
+
+
+  h1.formals, h1.casuals, h1.jeans {
+    font-size: 5vh !important;
+    margin-top: 3vh !important;
+    text-align: center !important;
+  }
+   h1.tshirts{
+     font-size: 5vh !important;
+    margin-top: 15vh !important;
+    text-align: center !important;
+   }
 }

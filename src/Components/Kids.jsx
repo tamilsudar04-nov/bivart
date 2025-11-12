@@ -366,7 +366,7 @@ export default function Kids() {
 
 
             {/* boys */}
-<h1 className="boys">BOYS</h1>
+<h1 className="girls">BOYS</h1>
   
     <div className="container">
       {boys.map((item) => (

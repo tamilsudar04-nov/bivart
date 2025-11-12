@@ -28,6 +28,14 @@
    margin-top:-22%;  
    margin-left: 63%;
 }
+.tb{
+font-weight: bold;
+font-size: 8vh;
+letter-spacing: 3vh;
+  text-align: center;
+  margin-top: 5vh;
+ font-family: 'Covington SC Cond', sans-serif;
+}
 
 .brand-container {
   display: grid;
@@ -87,4 +95,36 @@
   font-size: 16px;
   color: #000;
   margin-top: 4px;
+}
+.dis{
+  margin-top: -9vh;
+  margin-left: 33vh;
+  position: relative;
+  height: 80vh;
+}
+.flat{
+  position: absolute;
+  font-weight: bold;
+font-size: 8vh;
+text-align: center;
+  margin-top: -60vh;
+  margin-left: 50vh;
+ font-family: 'Covington SC Cond', sans-serif;
+}
+.code{
+   position: absolute;
+  font-weight: bold;
+font-size: 6vh;
+text-align: center;
+  margin-top: -30vh;
+  margin-left: 80vh;
+ border: 1px solid #fff;
+ background-color: #fff;
+ padding: 0.1vh 6vh;
+ border-radius: 5vh;
+}
+.vid{
+  width: 95%;
+ margin-left: 6vh;
+ 
 }
