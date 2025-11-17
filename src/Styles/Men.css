@@ -7,6 +7,16 @@ body{
   
 }
 
+.wish {
+  position: absolute;
+ margin-top: 56vh !important;
+  margin-left:16vh !important;
+  background: none !important;
+  border: none !important;
+  cursor: pointer;
+  z-index: 10;
+  
+}
 
 
 .tshirts{
@@ -41,15 +51,7 @@ font-family: 'Covington SC Cond', sans-serif;
   margin-top: -2vh;
 }
 
-  .wis{
-    border: none;
-   width:"5vw";
-    height:"5vh";
-   margin-left: 32vh;
-   margin-top:2vh;
-background:none;
-position: absolute;
-  }
+ 
 
 .container {
   display: grid;

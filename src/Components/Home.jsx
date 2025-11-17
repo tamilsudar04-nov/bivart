@@ -244,6 +244,79 @@ export default function Home() {
     <video autoPlay loop muted className='vid'><source src={vid1}  width='80%'/></video>
 
 
+
+ 
+    <div className="footer">
+
+      <div className="footer-left">
+
+        <div>
+          <h4>ONLINE SHOPPING</h4>
+          <p>Men</p>
+          <p>Women</p>
+          <p>Kids</p>
+          <p>Home</p>
+          <p>Beauty</p>
+          <p>Genz</p>
+          <p>Gift Cards</p>
+          <p>Myntra Insider</p>
+
+          <h4 className="mt">USEFUL LINKS</h4>
+          <p>Blog</p>
+          <p>Careers</p>
+          <p>Site Map</p>
+          <p>Corporate Information</p>
+          <p>Whitehat</p>
+          <p>Cleartrip</p>
+          <p>Myntra Global</p>
+        </div>
+
+        <div>
+          <h4>CUSTOMER POLICIES</h4>
+          <p>Contact Us</p>
+          <p>FAQ</p>
+          <p>T&C</p>
+          <p>Terms Of Use</p>
+          <p>Track Orders</p>
+          <p>Shipping</p>
+          <p>Cancellation</p>
+          <p>Returns</p>
+          <p>Privacy policy</p>
+          <p>Grievance Redressal</p>
+          <p>FSSAI Food Safety</p>
+          <p>Connect app</p>
+        </div>
+
+        <div>
+          <h4>EXPERIENCE MYNTRA APP ON MOBILE</h4>
+
+          <div className="app-flex">
+           
+          </div>
+
+          <h4 className="mt">KEEP IN TOUCH</h4>
+          <div className="social-flex">
+            
+          </div>
+        </div>
+      </div>
+
+      {/* RIGHT SIDE */}
+      <div className="footer-right">
+        <div className="right-item">
+          
+          <p><b>100% ORIGINAL</b> guarantee for all products at myntra.com</p>
+        </div>
+
+        <div className="right-item">
+          
+          <p><b>Return within 14days</b> of receiving your order</p>
+        </div>
+      </div>
+
+    </div>
+
+
       </div>
   )
 }

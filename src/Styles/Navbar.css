@@ -1,98 +1,137 @@
 @import url('https://fonts.cdnfonts.com/css/mommy-lemon');
 @import url('https://fonts.cdnfonts.com/css/saphira-demo');
 
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* DESKTOP DEFAULT */
+.navbar-container {
+  width: 100%;
 }
 
-.navbar {
-  display: flex;
-  margin-top: 3vh;
-  justify-content: center;
-  align-items: center;
-  position: sticky;
-  z-index: 1000;
+/* DESKTOP HEADER HIDDEN ON MOBILE */
+.mobile-header {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 6vh;
+  cursor: pointer;
+}
+
+.bf {
+  display: none;
+  text-decoration: none;
+  color: black;
+  font-family: 'Mommy Lemon', sans-serif;
+  font-size: 5vh;
 }
 
 .list {
-  list-style: none;
   display: flex;
-  align-items: center;
   gap: 9vh;
+  list-style: none;
+  margin-left: 5vh;
  
-  padding: 0;
-  
-                                      
 }
-
-.list li a {
-  
-  text-decoration: none;
-  color:black;
-  font-weight: bold;
-}
-
-.list li a:hover {
-  color: #f39c12;
-}
-
-.nav1{
+.nav1 a{
   font-family: 'Mommy Lemon', sans-serif; 
-  font-size: 5.5vh;
-  margin-left: 10vh;
+  font-size: 9vh;
+  color: black;
+  
+  
 }
-.nav2{ 
- margin-left: 35vh; 
- font-size: 2.5vh;
+.nav2 a{ 
+ margin-left: 30vh; 
+ font-size: 2.6vh;
   font-weight: bold;
   color: black;
   font-family: 'Saphira DEMO', sans-serif;
+ 
 }
-.nav3{ 
- font-size: 2.5vh;
+.nav2,.nav3,.nav4,.nav5,.nav6,.nav7{
+ margin-top: 5vh !important;
+}
+.nav3 a{ 
+ font-size: 2.6vh;
   font-weight: bold;
   color: black;
 font-family: 'Saphira DEMO', sans-serif;
 }
-.nav4{ 
- font-size: 2.5vh;
+.nav4 a{ 
+ font-size: 2.6vh;
   font-weight: bold;
   color: black;
    font-family: 'Saphira DEMO', sans-serif; 
 }
-.nav5{ 
- font-size: 2.5vh;
+.nav5 a{ 
+ font-size: 2.6vh;
   font-weight: bold;
   color: black;
     font-family: 'Saphira DEMO', sans-serif;
 }
-.nav6{ 
- font-size: 2.5vh;
+.nav6 a{ 
+ font-size: 2.6vh;
   font-weight: bold;
   color: black;
     font-family: 'Saphira DEMO', sans-serif;
 }
-.nav7{ 
- font-size: 2.5vh;
+.nav7 a{ 
+ font-size: 2.6vh;
   font-weight: bold;
   color: black;
     font-family: 'Saphira DEMO', sans-serif;
 }
-/* Login section */
 .Login {
-  display: flex;
   align-items: center;
   gap: 1vh;
   background: none;
   cursor: pointer;
-  font-family: 'Saphira DEMO', sans-serif;
+  font-size: 2.6vh;
+  margin-top: 5vh;
+  font-weight: bold;
+  color: black;
+   font-family: 'Saphira DEMO', sans-serif;
 }
 .login span {
   font-size: 2.5vh;
   font-weight: bold;
   color: black;
+    font-family: 'Saphira DEMO', sans-serif;
+}
+
+/* MOBILE MENU DEFAULT */
+.mobile-menu {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.4s;
+  background: white;
+}
+
+.mobile-menu.open {
+  display: block;
+  max-height: 600px;
+}
+a {
+  text-decoration: none !important;
 }
 
 
@@ -107,29 +146,54 @@ font-family: 'Saphira DEMO', sans-serif;
 
 
 
+@media (max-width: 600px) {
 
+  /* show mobile header */
+  .mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh;
+  }
+  
+  /* logo */
+  .bf {
+    display: block;
+    font-size: 5vh;
+    margin-left: 3vh;
+  }
 
+  /* show hamburger */
+  .hamburger {
+    display: block;
+    font-size: 4vh;
+  }
 
-
-
-
-
-
-
-
-
-
-@media (max-width: 768px) {
+  /* hide desktop menu */
   .navbar {
-    flex-direction: column;
+    display: none;
   }
 
-  .list {
-    flex-direction: column;
-    
+  /* SHOW mobile menu */
+  .mobile-menu {
+    display: block;
+    width: 100%;
   }
 
-  .login {
-    margin-top: 10px;
+  .mobile-menu li {
+    padding: 18px;
+    font-size: 18px;
+    border-bottom: 1px solid #ececec;
   }
+
+  .mobile-menu li a {
+    text-decoration: none;
+    color: black;
+  }
+  a {
+  text-decoration: none !important;
+}
+.list{
+  display: none;
+}
 }

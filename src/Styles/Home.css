@@ -128,3 +128,165 @@ text-align: center;
  margin-left: 6vh;
  
 }
+.footer {
+  width: 100%;
+  background: #f4f4f4;
+  padding: 40px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  font-family: sans-serif;
+}
+
+/* LEFT SIDE 3 COLUMNS */
+.footer-left {
+  display: flex;
+  justify-content: flex-start;
+  gap: 70px;
+}
+
+.footer-left h4 {
+  font-size: 13px;
+  font-weight: 700;
+  color: #343434;
+  margin-bottom: 10px;
+}
+
+.footer-left p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #696969;
+  cursor: pointer;
+}
+
+.footer-left p:hover {
+  color: #000;
+}
+
+/* APP STORE BUTTONS */
+.app-flex {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.app-flex img {
+  width: 130px;
+}
+
+/* SOCIAL ICONS */
+.social-flex {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.social-flex img {
+  width: 28px;
+  cursor: pointer;
+}
+
+/* RIGHT SIDE GUARANTEE */
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 270px;
+}
+
+.right-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.right-item img {
+  width: 50px;
+}
+
+.right-item p {
+  font-size: 15px;
+  color: #444;
+}
+
+/* EXTRA SPACING */
+.mt {
+  margin-top: 20px;
+}
+
+
+@media (max-width: 600px) {
+
+  .pic {
+    height: 35vh;
+  }
+
+  .bivart {
+    font-size: 5vh;
+    margin-top: -18vh;
+
+  }
+
+  .fashion {
+    font-size: 5vh;
+    margin-top: -18vh;
+   
+  }
+
+  .tb {
+    font-size: 4vh;
+    letter-spacing: 1vh;
+    margin-top: 3vh;
+  }
+
+  .brand-container {
+    grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
+    gap: 2vh;
+    padding: 2vh;
+  }
+
+  .brand-img {
+    height: 40vh;
+  }
+
+  .dis {
+    width: 98vw;
+    margin-left: 2vw;
+    height: 30vh;
+    margin-top: 2vh;
+  }
+
+  .flat {
+    font-size: 3vh;
+    margin-top: -23vh;
+    margin-left: 6vw;
+  }
+
+  .code {
+    font-size: 3vh;
+    padding: 0.5vh 4vh;
+    margin-top: -12vh;
+    margin-left: 20vw;
+  }
+
+  .vid {
+    width: 90vw;
+    margin-left: 5vw;
+    margin-top: 4vh;
+  }
+  .footer {
+    flex-direction: column;
+    padding: 4vh;       
+    gap: 4vh;            
+  }
+
+  .footer-left {
+    flex-direction: column;
+    gap: 4vh;           
+  }
+
+  .footer-right {
+    width: 100%;
+  }
+}

@@ -130,3 +130,98 @@ position: relative;
   background: #000;
   transform: scale(1.05);
 }
+
+
+
+
+
+
+
+
+/* ===========================
+   MOBILE VIEW (max-width: 600px)
+   =========================== */
+@media (max-width: 600px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Background Image */
+  .log {
+   display: none;
+  }
+
+  /* Login Form */
+  .form {
+    width: 90vw;
+    padding: 4vh 4vw;
+    margin: 5vh auto 5vh auto;   /* Push below the image */
+    border-radius: 3vw;
+    box-shadow: none;
+  }
+
+  .form h2 {
+    font-size: 6vw;
+    text-align: center;
+  }
+
+  .form p {
+    font-size: 4vw;
+    text-align: center;
+    margin-bottom: 3vh;
+  }
+
+  /* Inputs & Select Full Width */
+  input,
+  select {
+    width: 90%;
+    padding: 1.8vh 2vw;
+    font-size: 4vw;
+    border-radius: 2vw;
+  }
+
+  /* Login Button Full Width */
+  .login {
+    width: 90%;
+    padding: 2vh 0;
+    font-size: 4.5vw;
+    border-radius: 2vw;
+    margin-top: 2vh;
+  }
+
+  /* ========== LOGGED-IN SCREEN ========== */
+
+  .log2 {
+    width: 100vw;
+    height: 40vh;
+    object-fit: cover;
+    margin: 0;
+    position: absolute;
+    top: 0;
+  }
+
+  .welcome {
+    position: relative;
+    margin: 45vh 0 1vh 0;
+    text-align: center;
+    font-size: 7vw;
+  }
+
+  .subtitle {
+    position: relative;
+    text-align: center;
+    margin: 1vh 0 3vh 0;
+    font-size: 4.2vw;
+  }
+
+  .logout {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    padding: 1.8vh 0;
+    display: block;
+    font-size: 4.5vw;
+    border-radius: 3vw;
+  }
+}

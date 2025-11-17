@@ -40,7 +40,7 @@ font-family: 'Covington SC Cond', sans-serif;
   background-color: #5281e0;
 }
 
- .wis {
+ .wish {
   position: absolute;
  margin-top: 56vh !important;
   margin-left:16vh !important;
@@ -161,21 +161,20 @@ font-family: 'Covington SC Cond', sans-serif;
   }
  
   
-  .wis {
+  .wish{
   position: absolute;
-  width: 1vh !important;
-  height: 1vh !important;
- margin-top:auto !important;
+   width: 2px!important;
+  height:2px!important; 
+ margin-top:0 !important;
   margin-left:14vh !important;
   background: none !important;
   border: none !important;
   cursor: pointer;
   z-index: 100;
   
-}
+} 
 
-   
- 
+  
   h1.sarees, h1.kurtis, h1.bottom, h1.dress {
     font-size: 5vh !important;
     margin-top: 2vh !important;
