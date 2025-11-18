@@ -39,17 +39,18 @@ font-family: 'Covington SC Cond', sans-serif;
   margin-top: -2vh;
   background-color: #5281e0;
 }
-
- .wish {
+.wis {
   position: absolute;
+ 
  margin-top: 56vh !important;
   margin-left:16vh !important;
   background: none !important;
   border: none !important;
   cursor: pointer;
-  z-index: 10;
+  z-index: 100;
   
 }
+
 
 .container {
   display: grid;
@@ -134,24 +135,25 @@ font-family: 'Covington SC Cond', sans-serif;
     max-width: 100% !important;
     margin: 0 !important;
     border-radius: 1.2vh !important;
-    overflow: hidden;
+    overflow:visible !important;
     height: auto !important;
-    display: block;
-    position: relative;
+    display: block !important;
+    position: relative !important;
   }
 
   
-  .img {
+   .img {
     display: block;
     width: 100% !important;
     height: 20vh !important;      
     object-fit: cover !important;
     border-radius: 1.2vh 1.2vh 0 0 !important;
-  }
+    position: relative;
+  } 
 
-  .brand { font-size: 2.3vh !important; text-align: center; margin: 6px 4px 0; }
-  .title { font-size: 1.8vh !important; text-align: center; color: #555; margin: 2px 6px; }
-  .price { font-size: 2.5 !important; display:flex; justify-content:left; gap:1vh; margin-bottom:vh; }
+  .brand { font-size: 2vh !important; text-align: center; margin: 6px 4px 0; }
+  .title { font-size: 1.5vh !important; text-align: center; color: #555; margin: 2px 6px; }
+  .price { font-size: 1.5vh !important; display:flex; justify-content:left; gap:0.5vh;  }
 
  
   .atc{
@@ -160,21 +162,26 @@ font-family: 'Covington SC Cond', sans-serif;
     margin-top: 0.5vh !important;
   }
  
-  
-  .wish{
-  position: absolute;
-   width: 2px!important;
-  height:2px!important; 
- margin-top:0 !important;
-  margin-left:14vh !important;
+
+
+
+.wis {
+  bottom: 0vh !important;
+  left:1.5vh !important;
+  position: absolute !important;
+  /* top: 15vh !important;
+  right: 1vh !important; */
   background: none !important;
   border: none !important;
-  cursor: pointer;
-  z-index: 100;
-  
-} 
+  width: 1vh !important;
+  height: 1vh !important; 
+  z-index: 1000 !important;
+  display: block !important;   
+  opacity: 1 !important;      
+}
 
-  
+
+
   h1.sarees, h1.kurtis, h1.bottom, h1.dress {
     font-size: 5vh !important;
     margin-top: 2vh !important;

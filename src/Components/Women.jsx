@@ -668,7 +668,7 @@ export default function Products() {
     alert(`${item.title} added to cart!`);}}>🛒 Add to Cart</button>
 
 
- <button className="wish" onClick={() => addToWishlist(item)}>  
+ <button id="wis" className="wis" onClick={() => addToWishlist(item)}>  
    <img src={heart} alt="" width="25vw" height="25vh"/>
           </button>
           </div>
@@ -695,7 +695,7 @@ export default function Products() {
              <button  className="atc" onClick={() => { addToCart(item);
     alert(`${item.title} added to cart!`);}}>Add to Cart</button>
  
- <button className="wish" onClick={() => addToWishlist(item)}>  
+ <button className="wis" onClick={() => addToWishlist(item)}>  
    <img src={heart} alt="" width="25vw" height="25vh"/>
           </button>
         </div>
@@ -720,7 +720,7 @@ export default function Products() {
 <button  className="atc" onClick={() => { addToCart(item);
     alert(`${item.title} added to cart!`);}}>Add to Cart</button>
 
-<button className="wish" onClick={() => addToWishlist(item)}>  
+<button className="wis" onClick={() => addToWishlist(item)}>  
    <img src={heart} alt="" width="25vw" height="25vh"/>
           </button>
 
@@ -745,7 +745,7 @@ export default function Products() {
             <button  className="atc" onClick={() => { addToCart(item);
     alert(`${item.title} added to cart!`);}}>Add to Cart</button>
 
-<button className="wish" onClick={() => addToWishlist(item)}>  
+<button className="wis"  onClick={() => addToWishlist(item)}>  
    <img src={heart} alt="" width="25vw" height="25vh"/>
           </button>
 

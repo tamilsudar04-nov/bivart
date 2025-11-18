@@ -386,8 +386,8 @@ export default function Kids() {
     alert(`${item.title} added to cart!`);}}>🛒 Add to Cart</button>
 
 
- <button className="wish" onClick={() => addToWishlist(item)}>  
-   <img src={heart} alt="" width="30vw" height="30vh"/>
+ <button className="wis" onClick={() => addToWishlist(item)}>  
+   <img src={heart} alt="" width="25vw" height="25vh"/>
           </button>
           </div>
 
@@ -417,8 +417,8 @@ export default function Kids() {
     alert(`${item.title} added to cart!`);}}>🛒 Add to Cart</button>
 
 
- <button className="wish" onClick={() => addToWishlist(item)}>  
-   <img src={heart} alt="" width="30vw" height="30vh"/>
+ <button className="wis" onClick={() => addToWishlist(item)}>  
+   <img src={heart} alt="" width="25vw" height="25vh"/>
           </button>
           </div>
 
