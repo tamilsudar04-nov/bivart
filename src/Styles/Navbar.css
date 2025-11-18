@@ -43,14 +43,14 @@
 
 .list {
   display: flex;
-  gap: 8vh;
+  gap: 9vh;
   list-style: none;
   margin-left: 5vh;
  
 }
 .nav1 a{
   font-family: 'Mommy Lemon', sans-serif; 
-  font-size: 9vh;
+  font-size: 6vh;
   color: black;
   
   
