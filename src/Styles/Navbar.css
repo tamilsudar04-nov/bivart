@@ -43,7 +43,7 @@
 
 .list {
   display: flex;
-  gap: 9vh;
+  gap: 8vh;
   list-style: none;
   margin-left: 5vh;
  
@@ -56,7 +56,7 @@
   
 }
 .nav2 a{ 
- margin-left: 30vh; 
+ margin-left: 25vh; 
  font-size: 2.6vh;
   font-weight: bold;
   color: black;
